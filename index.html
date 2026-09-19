@@ -3,50 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leonor Guedes | Portefólio Pessoal</title>
-  <meta name="description" content="Portefólio pessoal de Leonor Guedes, Estudante de Engenharia Informática no Instituto Superior Técnico (IST). Projetos, experiência e competências.">
-  <meta name="author" content="Leonor Guedes">
+  <title>Leonor Guedes — Portefólio</title>
+  <meta name="description" content="Portefólio de Leonor Guedes, estudante de Engenharia Informática no Instituto Superior Técnico.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
 
-  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <!-- Fonts: Plus Jakarta Sans & Outfit for Bubbly Titles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- FontAwesome 6 Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Background Decorative Pastel Orbs -->
-  <div class="bg-blob blob-mint" aria-hidden="true"></div>
-  <div class="bg-blob blob-pink" aria-hidden="true"></div>
-  <div class="bg-blob blob-accent" aria-hidden="true"></div>
-
-  <!-- Header / Navigation -->
+  <!-- Clean Floating Header -->
   <header class="navbar-header" id="navbar">
     <div class="container nav-container">
-      <a href="#hero" class="brand-logo" id="nav-logo">
-        <span class="logo-accent">LG</span><span class="logo-dot">.</span>
+      <a href="#hero" class="brand-logo">
+        <span class="logo-bubble">LG</span>
       </a>
 
       <nav class="nav-menu" id="nav-menu">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
-          <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
-          <li class="nav-item"><a href="#experiencia" class="nav-link">Experiência</a></li>
-          <li class="nav-item"><a href="#competencias" class="nav-link">Competências</a></li>
-          <li class="nav-item"><a href="#contacto" class="nav-link nav-btn-cta">Contacto</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contacto" class="nav-link nav-btn-pill">Contacto</a></li>
         </ul>
       </nav>
 
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu de navegação">
-        <i class="fa-solid fa-bars"></i>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <i class="fa-solid fa-bars-staggered"></i>
       </button>
     </div>
   </header>
@@ -55,502 +49,262 @@
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
       <div class="container hero-container">
+        
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="badge-dot"></span>
-            <span>Estudante de Engenharia Informática @ IST</span>
+          <div class="hero-pill">
+            <span class="pill-sparkle">✨</span>
+            <span>Engenharia Informática @ IST</span>
           </div>
 
           <h1 class="hero-title">
-            Olá, sou a <span class="text-gradient">Leonor Guedes</span>.
+            Leonor Guedes
           </h1>
 
-          <p class="hero-subtitle">
-            Construo software com <strong class="highlight-mint">rigor de engenharia</strong>, lógica apurada e uma constante <strong class="highlight-pink">vertente criativa</strong>.
+          <p class="hero-sub">
+            Software, Game Dev & Lógica de Programação.
           </p>
 
           <p class="hero-bio">
-            Licencianda em Engenharia Informática e de Computadores no Instituto Superior Técnico (IST). Apaixonada por arquitetura de software, desenvolvimento prático, resolução de problemas complexos e criação de soluções com impacto real.
+            A estudar no Instituto Superior Técnico. Gosto de resolver problemas complexos, desenhar arquiteturas de software limpas e criar desde projetos de sistemas em Go/C a jogos interativos e web.
           </p>
 
           <div class="hero-actions">
-            <a href="#projetos" class="btn btn-primary">
-              <span>Explorar Projetos</span>
-              <i class="fa-solid fa-arrow-down-long"></i>
+            <a href="#projetos" class="btn btn-bubbly-primary">
+              <span>Ver Projetos</span>
+              <i class="fa-solid fa-arrow-down"></i>
             </a>
-            <a href="#contacto" class="btn btn-secondary">
-              <span>Contactar</span>
-              <i class="fa-regular fa-paper-plane"></i>
-            </a>
-            <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="Perfil do GitHub">
+            <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="btn btn-bubbly-secondary">
               <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:guedes.leonor@tecnico.ulisboa.pt" class="btn btn-circle" aria-label="Enviar Email">
+              <i class="fa-regular fa-envelope"></i>
             </a>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="avatar-wrapper">
-            <div class="blob-frame"></div>
-            <img src="https://github.com/LeoPlix.png" alt="Leonor Guedes" class="profile-img" id="hero-profile-img" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Leonor+Guedes&background=A8E6CF&color=2D6A4F&size=512';">
-            <div class="status-card glass-card">
-              <i class="fa-solid fa-code-commit icon-mint"></i>
-              <div>
-                <span class="status-title">GitHub Sync</span>
-                <span class="status-sub">Sincronizado via API</span>
-              </div>
-            </div>
-            <div class="tech-badge-floating glass-card">
-              <i class="fa-solid fa-graduation-cap icon-pink"></i>
-              <span>IST Lisbon</span>
-            </div>
+        <div class="hero-avatar-box">
+          <div class="avatar-bubble">
+            <img src="https://github.com/LeoPlix.png" alt="Leonor Guedes" id="hero-profile-img" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Leonor+Guedes&background=E8F4EC&color=2D6A4F&size=512';">
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- Sobre Mim Section -->
-    <section class="section sobre-section" id="sobre">
+    <!-- Sobre Section -->
+    <section class="section" id="sobre">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Percurso & Valores</span>
+        <div class="section-title-box">
           <h2 class="section-title">Sobre Mim</h2>
-          <p class="section-description">
-            A combinação entre rigor académico, pragmatismo no desenvolvimento de software e pensamento criativo.
-          </p>
         </div>
 
-        <div class="pillars-grid">
-          <!-- Pillar 1 -->
-          <article class="pillar-card glass-card">
-            <div class="pillar-icon-box icon-bg-mint">
-              <i class="fa-solid fa-microchip"></i>
+        <div class="bubbly-grid-3">
+          <div class="bubbly-card card-mint">
+            <div class="card-icon-bubble">
+              <i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <h3 class="pillar-title">Engenharia & Rigor</h3>
-            <span class="pillar-subtitle">Instituto Superior Técnico</span>
-            <p class="pillar-text">
-              Formação sólida nos alicerces da computação: estruturas de dados avançadas, análise de algoritmos, sistemas operativos e arquitetura de computadores. Foco no desempenho e eficiência.
+            <h3>Base no IST</h3>
+            <p>
+              Formação teórica e prática exigente no Técnico: Algoritmos, Sistemas Operativos, Arquitetura de Computadores e Compiladores.
             </p>
-          </article>
+          </div>
 
-          <!-- Pillar 2 -->
-          <article class="pillar-card glass-card">
-            <div class="pillar-icon-box icon-bg-pink">
-              <i class="fa-solid fa-laptop-code"></i>
+          <div class="bubbly-card card-rose">
+            <div class="card-icon-bubble">
+              <i class="fa-solid fa-code"></i>
             </div>
-            <h3 class="pillar-title">Desenvolvimento Prático</h3>
-            <span class="pillar-subtitle">Projetos & Aplicações Reais</span>
-            <p class="pillar-text">
-              Transformação de conceitos teóricos em código limpo e funcional. Experiência prática em Go, Python, C#, C/C++ e JavaScript, construindo sistemas robustos e modulares.
+            <h3>Desenvolvimento</h3>
+            <p>
+              Foco em código limpo e estruturado. Experiência prática com Go, Python, C#, C/C++ e ferramentas de backend e bases de dados.
             </p>
-          </article>
+          </div>
 
-          <!-- Pillar 3 -->
-          <article class="pillar-card glass-card">
-            <div class="pillar-icon-box icon-bg-accent">
-              <i class="fa-solid fa-feather-pointed"></i>
+          <div class="bubbly-card card-peach">
+            <div class="card-icon-bubble">
+              <i class="fa-solid fa-gamepad"></i>
             </div>
-            <h3 class="pillar-title">Vertente Criativa & Escrita</h3>
-            <span class="pillar-subtitle">Game Dev & Comunicação</span>
-            <p class="pillar-text">
-              Interesse no desenvolvimento de jogos técnicos e lógica interativa. Paixão pela escrita, clareza na documentação técnica e sensibilidade no design de experiências do utilizador.
+            <h3>Criatividade & Games</h3>
+            <p>
+              Interesse por desenvolvimento de jogos, motores de puzzles lógicos, escrita e design de experiências de utilizador amigáveis.
             </p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Projetos Section -->
-    <section class="section projetos-section" id="projetos">
+    <section class="section" id="projetos">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Portefólio de Código</span>
+        <div class="section-title-box">
           <h2 class="section-title">Projetos</h2>
-          <p class="section-description">
-            Destaque principal e repositórios públicos sincronizados automaticamente com o GitHub.
-          </p>
+          <p class="section-sub">Destaque principal e os meus repositórios no GitHub.</p>
         </div>
 
-        <!-- Destaque Principal Fixos (Spotlight Banner) -->
-        <div class="featured-spotlight glass-card">
-          <div class="spotlight-badge">
-            <i class="fa-solid fa-star"></i>
-            <span>Destaque Principal Fixos</span>
+        <!-- Featured Spotlight -->
+        <div class="featured-bubbly-card">
+          <div class="featured-top-bar">
+            <span class="featured-tag"><i class="fa-solid fa-star"></i> Projeto em Destaque</span>
+            <span class="featured-repo-id">LeoPlix / ExamManagementPlatform</span>
           </div>
 
-          <div class="spotlight-content">
-            <div class="spotlight-main-info">
-              <span class="spotlight-repo-name"><i class="fa-brands fa-github"></i> LeoPlix/ExamManagementPlatform</span>
-              <h3 class="spotlight-title">Exam Management Platform</h3>
-              <p class="spotlight-description">
-                Plataforma completa e modular concebida para gerir o ciclo de vida de exames e avaliações académicas. Permite agendamento eficiente, gestão de permissões de utilizadores, submissão segura e estruturação centralizada de testes e resultados.
+          <div class="featured-body">
+            <div class="featured-info">
+              <h3>Exam Management Platform</h3>
+              <p>
+                Plataforma de gestão de exames criada para simplificar o agendamento, submissão e administração de avaliações académicas com controlo de acessos e arquitetura modular.
               </p>
               
-              <div class="spotlight-tags">
-                <span class="tag-pill tag-mint"><i class="fa-solid fa-code"></i> Go / C#</span>
-                <span class="tag-pill"><i class="fa-brands fa-react"></i> React / Web</span>
-                <span class="tag-pill"><i class="fa-brands fa-docker"></i> Docker</span>
-                <span class="tag-pill"><i class="fa-solid fa-database"></i> MongoDB / SQL</span>
-                <span class="tag-pill tag-pink"><i class="fa-solid fa-network-wired"></i> REST API</span>
+              <div class="bubbly-tags">
+                <span class="tag-bubble">Go / C#</span>
+                <span class="tag-bubble">React</span>
+                <span class="tag-bubble">Docker</span>
+                <span class="tag-bubble">MongoDB</span>
+                <span class="tag-bubble">REST API</span>
               </div>
             </div>
 
-            <div class="spotlight-actions">
-              <a href="https://github.com/LeoPlix/ExamManagementPlatform" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+            <div class="featured-action">
+              <a href="https://github.com/LeoPlix/ExamManagementPlatform" target="_blank" rel="noopener noreferrer" class="btn btn-bubbly-primary">
                 <i class="fa-brands fa-github"></i>
-                <span>Ver Repositório no GitHub</span>
-              </a>
-              <a href="#contacto" class="btn btn-secondary btn-block">
-                <i class="fa-solid fa-info-circle"></i>
-                <span>Saber Mais</span>
+                <span>Ver no GitHub</span>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Dynamic GitHub Repositories Grid Section -->
-        <div class="repos-wrapper">
-          <div class="repos-header">
-            <h3 class="repos-title">
-              <i class="fa-solid fa-folder-open icon-mint"></i>
-              Repositórios do GitHub
-            </h3>
-            <div class="repos-status" id="repos-count-badge">
-              <span>A carregar repositórios...</span>
-            </div>
-          </div>
+        <!-- Repos GitHub Header -->
+        <div class="repos-bar">
+          <h3><i class="fa-solid fa-folder-closed icon-mint"></i> Outros Repositórios</h3>
+          <span class="badge-count" id="repos-count-badge">GitHub</span>
+        </div>
 
-          <!-- Dynamic Grid Container -->
-          <div class="projects-grid" id="projects-grid">
-            <!-- Loading Skeletons -->
-            <div class="repo-card glass-card skeleton-card">
-              <div class="skeleton-line title"></div>
-              <div class="skeleton-line text"></div>
-              <div class="skeleton-line text short"></div>
-            </div>
-            <div class="repo-card glass-card skeleton-card">
-              <div class="skeleton-line title"></div>
-              <div class="skeleton-line text"></div>
-              <div class="skeleton-line text short"></div>
-            </div>
-            <div class="repo-card glass-card skeleton-card">
-              <div class="skeleton-line title"></div>
-              <div class="skeleton-line text"></div>
-              <div class="skeleton-line text short"></div>
-            </div>
-          </div>
+        <!-- Dynamic Grid -->
+        <div class="projects-bubbly-grid" id="projects-grid">
+          <div class="bubbly-card skeleton-card"><div class="skeleton-pill"></div></div>
+          <div class="bubbly-card skeleton-card"><div class="skeleton-pill"></div></div>
+          <div class="bubbly-card skeleton-card"><div class="skeleton-pill"></div></div>
         </div>
       </div>
     </section>
 
     <!-- Experiência Section -->
-    <section class="section experiencia-section" id="experiencia">
+    <section class="section" id="experiencia">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Percurso Académico & Atividades</span>
+        <div class="section-title-box">
           <h2 class="section-title">Experiência</h2>
-          <p class="section-description">
-            O meu percurso de aprendizagem, trabalho em equipa e desenvolvimento técnico.
-          </p>
         </div>
 
-        <div class="timeline">
-          <!-- Timeline Item 1 -->
-          <div class="timeline-item">
-            <div class="timeline-marker icon-bg-mint">
-              <i class="fa-solid fa-network-wired"></i>
-            </div>
-            <div class="timeline-content glass-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Equipa de Infraestrutura & Operações</h3>
-                  <h4 class="timeline-company">SINFO (Semana de Informática)</h4>
-                </div>
-                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2025 – Presente</span>
-              </div>
-              <p class="timeline-text">
-                Participação ativa na organização de uma das maiores conferências académicas de informática da Europa, organizada exclusivamente por estudantes no IST. Colaboração no suporte à infraestrutura técnica, logística e gestão de operações do evento.
-              </p>
-              <div class="timeline-tags">
-                <span class="mini-tag">Infraestrutura</span>
-                <span class="mini-tag">Trabalho em Equipa</span>
-                <span class="mini-tag">Logística Técnica</span>
-                <span class="mini-tag">Eventos Tech</span>
-              </div>
+        <div class="bubbly-timeline">
+          <!-- Item 1 -->
+          <div class="timeline-card">
+            <div class="timeline-badge badge-mint">2025 – Presente</div>
+            <div class="timeline-body">
+              <h3>SINFO (Semana de Informática do IST)</h3>
+              <span class="timeline-role">Equipa de Infraestrutura & Operações</span>
+              <p>Colaboração na organização e suporte tecnológico de um dos maiores eventos universitários de tecnologia da Europa.</p>
             </div>
           </div>
 
-          <!-- Timeline Item 2 -->
-          <div class="timeline-item">
-            <div class="timeline-marker icon-bg-pink">
-              <i class="fa-solid fa-gamepad"></i>
-            </div>
-            <div class="timeline-content glass-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Game Dev Técnico & Soluções de Lógica</h3>
-                  <h4 class="timeline-company">Projetos Autónomos & Académicos</h4>
-                </div>
-                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024 – Presente</span>
-              </div>
-              <p class="timeline-text">
-                Desenvolvimento de jogos e resolução de puzzles lógicos complexos em Python e Prolog. Implementação de motores de regras e estratégias de decisão para projetos como <em>Star Battle Solver</em>, <em>MNK Game</em> e <em>Orbito Strategy Game</em>.
-              </p>
-              <div class="timeline-tags">
-                <span class="mini-tag">Python</span>
-                <span class="mini-tag">Lógica & Algoritmos</span>
-                <span class="mini-tag">Game Design</span>
-                <span class="mini-tag">Resolução de Puzzles</span>
-              </div>
+          <!-- Item 2 -->
+          <div class="timeline-card">
+            <div class="timeline-badge badge-rose">2024 – Presente</div>
+            <div class="timeline-body">
+              <h3>Game Dev Técnico & Puzzles Lógicos</h3>
+              <span class="timeline-role">Projetos de Lógica & Jogos</span>
+              <p>Desenvolvimento de motores de jogos e resolução automática de puzzles lógicos como Star Battle Solver, Orbito e jogo MNK.</p>
             </div>
           </div>
 
-          <!-- Timeline Item 3 -->
-          <div class="timeline-item">
-            <div class="timeline-marker icon-bg-accent">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </div>
-            <div class="timeline-content glass-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Licenciatura em Engenharia Informática e de Computadores</h3>
-                  <h4 class="timeline-company">Instituto Superior Técnico (IST)</h4>
-                </div>
-                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2023 – Presente</span>
-              </div>
-              <p class="timeline-text">
-                Formação intensiva cobrindo Programação com Restrições, Análise e Síntese de Algoritmos (ASA), Sistemas Operativos (SO), Programação Orientada a Objetos e Fundamentos de Computação.
-              </p>
-              <div class="timeline-tags">
-                <span class="mini-tag">Engenharia de Software</span>
-                <span class="mini-tag">Algoritmos & ASA</span>
-                <span class="mini-tag">Sistemas Operativos</span>
-                <span class="mini-tag">C / C++ / Go</span>
-              </div>
+          <!-- Item 3 -->
+          <div class="timeline-card">
+            <div class="timeline-badge badge-peach">2023 – Presente</div>
+            <div class="timeline-body">
+              <h3>Instituto Superior Técnico (IST)</h3>
+              <span class="timeline-role">Licenciatura em Engenharia Informática e de Computadores</span>
+              <p>Percurso académico focado em Algoritmos (ASA), Sistemas Operativos (SO), Estruturas de Dados e Engenharia de Software.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Competências Section -->
-    <section class="section competencias-section" id="competencias">
+    <!-- Skills Section -->
+    <section class="section" id="skills">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Stack & Conhecimentos</span>
-          <h2 class="section-title">Competências</h2>
-          <p class="section-description">
-            Tecnologias, linguagens e ferramentas com que trabalho no dia a dia.
-          </p>
+        <div class="section-title-box">
+          <h2 class="section-title">Skills & Tecnologias</h2>
         </div>
 
-        <div class="skills-grid">
-          <!-- Skill Category 1 -->
-          <div class="skill-category-card glass-card">
-            <div class="skill-category-header">
-              <div class="category-icon icon-bg-mint">
-                <i class="fa-solid fa-code"></i>
-              </div>
-              <h3>Linguagens</h3>
+        <div class="skills-bubbly-wrapper">
+          <div class="skills-group">
+            <h4>Linguagens</h4>
+            <div class="skills-pill-grid">
+              <span class="skill-bubble"><i class="fa-brands fa-golang"></i> Go</span>
+              <span class="skill-bubble"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-bubble"><i class="fa-solid fa-code"></i> C# (.NET)</span>
+              <span class="skill-bubble"><i class="fa-solid fa-c"></i> C / C++</span>
+              <span class="skill-bubble"><i class="fa-brands fa-js"></i> JavaScript</span>
             </div>
-            <ul class="skills-list">
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-brands fa-golang"></i> Go (Golang)</span>
-                  <span class="skill-level">Avançado</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
-                  <span class="skill-level">Avançado</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-solid fa-hashtag"></i> C# (.NET)</span>
-                  <span class="skill-level">Intermédio</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-solid fa-c"></i> C / C++</span>
-                  <span class="skill-level">Sólido</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
-                  <span class="skill-level">Intermédio</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
-              </li>
-            </ul>
           </div>
 
-          <!-- Skill Category 2 -->
-          <div class="skill-category-card glass-card">
-            <div class="skill-category-header">
-              <div class="category-icon icon-bg-pink">
-                <i class="fa-solid fa-cubes"></i>
-              </div>
-              <h3>Desenvolvimento Web & Backend</h3>
+          <div class="skills-group">
+            <h4>Web & Backend</h4>
+            <div class="skills-pill-grid">
+              <span class="skill-bubble"><i class="fa-brands fa-react"></i> Next.js / React</span>
+              <span class="skill-bubble"><i class="fa-solid fa-server"></i> REST APIs</span>
+              <span class="skill-bubble"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+              <span class="skill-bubble"><i class="fa-solid fa-cubes"></i> Arquitetura Backend</span>
             </div>
-            <ul class="skills-list">
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-brands fa-react"></i> Next.js & React</span>
-                  <span class="skill-level">Intermédio</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-solid fa-server"></i> Arquitetura Backend & REST</span>
-                  <span class="skill-level">Avançado</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5 / Custom CSS3</span>
-                  <span class="skill-level">Avançado</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-solid fa-plug"></i> Microserviços & APIs</span>
-                  <span class="skill-level">Intermédio</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
-              </li>
-            </ul>
           </div>
 
-          <!-- Skill Category 3 -->
-          <div class="skill-category-card glass-card">
-            <div class="skill-category-header">
-              <div class="category-icon icon-bg-accent">
-                <i class="fa-solid fa-gears"></i>
-              </div>
-              <h3>Ferramentas & Metodologias</h3>
+          <div class="skills-group">
+            <h4>Ferramentas</h4>
+            <div class="skills-pill-grid">
+              <span class="skill-bubble"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="skill-bubble"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="skill-bubble"><i class="fa-solid fa-database"></i> MongoDB & SQL</span>
+              <span class="skill-bubble"><i class="fa-solid fa-terminal"></i> Linux / Bash</span>
             </div>
-            <ul class="skills-list">
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-brands fa-docker"></i> Docker & Contentores</span>
-                  <span class="skill-level">Intermédio</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
-                  <span class="skill-level">Avançado</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-solid fa-database"></i> MongoDB & SQL</span>
-                  <span class="skill-level">Sólido</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 84%;"></div></div>
-              </li>
-              <li class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name"><i class="fa-solid fa-sitemap"></i> Arquitetura de Software</span>
-                  <span class="skill-level">Sólido</span>
-                </div>
-                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contacto Section -->
-    <section class="section contacto-section" id="contacto">
+    <section class="section" id="contacto">
       <div class="container">
-        <div class="contact-card glass-card">
-          <div class="contact-content">
-            <span class="section-tag">Vamos Conversar</span>
-            <h2 class="contact-title">Entrar em Contacto</h2>
-            <p class="contact-text">
-              Estou sempre disponível para discutir novas oportunidades de colaboração, engenharia de software, projetos universitários ou simplesmente trocar ideias sobre tecnologia.
-            </p>
+        <div class="contact-bubbly-box">
+          <h2>Vamos falar?</h2>
+          <p>Se queres falar sobre projetos, código ou simplesmente trocar uma ideia, entra em contacto!</p>
 
-            <div class="contact-methods">
-              <!-- Email Item -->
-              <a href="mailto:guedes.leonor@tecnico.ulisboa.pt" class="contact-item">
-                <div class="contact-icon icon-bg-mint">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="contact-info">
-                  <span class="contact-label">E-mail Institucional</span>
-                  <span class="contact-val">guedes.leonor@tecnico.ulisboa.pt</span>
-                </div>
-                <i class="fa-solid fa-chevron-right contact-arrow"></i>
-              </a>
-
-              <!-- LinkedIn Item -->
-              <a href="https://linkedin.com/in/leonorguedes" target="_blank" rel="noopener noreferrer" class="contact-item">
-                <div class="contact-icon icon-bg-pink">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-                <div class="contact-info">
-                  <span class="contact-label">LinkedIn</span>
-                  <span class="contact-val">linkedin.com/in/leonorguedes</span>
-                </div>
-                <i class="fa-solid fa-chevron-right contact-arrow"></i>
-              </a>
-
-              <!-- GitHub Item -->
-              <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="contact-item">
-                <div class="contact-icon icon-bg-accent">
-                  <i class="fa-brands fa-github"></i>
-                </div>
-                <div class="contact-info">
-                  <span class="contact-label">GitHub</span>
-                  <span class="contact-val">github.com/LeoPlix</span>
-                </div>
-                <i class="fa-solid fa-chevron-right contact-arrow"></i>
-              </a>
-            </div>
+          <div class="contact-buttons-row">
+            <a href="mailto:guedes.leonor@tecnico.ulisboa.pt" class="contact-btn">
+              <i class="fa-regular fa-envelope"></i>
+              <span>guedes.leonor@tecnico.ulisboa.pt</span>
+            </a>
+            <a href="https://linkedin.com/in/leonorguedes" target="_blank" rel="noopener noreferrer" class="contact-btn">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="contact-btn">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Clean Minimal Footer -->
   <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-brand">
-        <span class="logo-accent">LG</span><span class="logo-dot">.</span>
-        <span class="footer-copy">© 2026 Leonor Guedes. Todos os direitos reservados.</span>
-      </div>
-
-      <div class="footer-links">
-        <a href="#hero">Início</a>
-        <a href="#sobre">Sobre Mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-
-      <a href="#hero" class="back-to-top" aria-label="Voltar ao topo">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
+    <div class="container footer-box">
+      <span>Leonor Guedes © 2026</span>
+      <a href="#hero" class="back-top-btn"><i class="fa-solid fa-arrow-up"></i> Topo</a>
     </div>
   </footer>
 
-  <!-- Custom JavaScript -->
   <script src="index.js"></script>
 </body>
 </html>
