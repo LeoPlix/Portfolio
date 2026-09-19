@@ -31,17 +31,23 @@
 
       <nav class="nav-menu" id="nav-menu">
         <ul class="nav-list">
-          <li><a href="#sobre" class="nav-link">Sobre</a></li>
-          <li><a href="#projetos" class="nav-link">Projetos</a></li>
-          <li><a href="#experiencia" class="nav-link">Experiência</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#contacto" class="nav-link nav-btn-pill">Contacto</a></li>
+          <li><a href="#sobre" class="nav-link" data-i18n="nav_sobre">Sobre</a></li>
+          <li><a href="#projetos" class="nav-link" data-i18n="nav_projetos">Projetos</a></li>
+          <li><a href="#experiencia" class="nav-link" data-i18n="nav_experiencia">Experiência</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+          <li><a href="#contacto" class="nav-link nav-btn-pill" data-i18n="nav_contacto">Contacto</a></li>
         </ul>
       </nav>
 
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir Menu">
-        <i class="fa-solid fa-bars-staggered"></i>
-      </button>
+      <div class="nav-actions-right">
+        <button class="lang-toggle-btn" id="lang-toggle" aria-label="Alterar idioma">
+          <span id="lang-text">PT | EN</span>
+        </button>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -53,15 +59,15 @@
         <div class="hero-content">
           <div class="hero-pill">
             <span class="pill-sparkle">✨</span>
-            <span>Engenharia Informática @ IST</span>
+            <span data-i18n="hero_pill">Engenharia Informática @ IST</span>
           </div>
 
           <h1 class="hero-title">
             Leonor Guedes
           </h1>
 
-          <p class="hero-sub">
-            SINFO Dev Team & Game Dev Member
+          <p class="hero-sub" data-i18n="hero_sub">
+            SINFO Dev Team & Game Dev
           </p>
 
           <div class="hero-avatar-box">
@@ -70,13 +76,13 @@
             </div>
           </div>
 
-          <p class="hero-bio">
+          <p class="hero-bio" data-i18n="hero_bio">
             Estudante no Instituto Superior Técnico. Desenvolvo software com foco em código limpo e sistemas eficientes — desde projetos de engenharia em Go e C a jogos em Unity e Godot desenvolvidos em equipa para a Steam.
           </p>
 
           <div class="hero-actions">
             <a href="#projetos" class="btn btn-bubbly-primary">
-              <span>Explorar Projetos</span>
+              <span data-i18n="hero_btn_projects">Explorar Projetos</span>
               <i class="fa-solid fa-arrow-down"></i>
             </a>
             <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="btn btn-bubbly-secondary">
@@ -96,8 +102,8 @@
     <section class="section" id="sobre">
       <div class="container">
         <div class="section-title-box">
-          <h2 class="section-title">Sobre Mim</h2>
-          <p class="section-sub">Rigor concetual, desenvolvimento prático e trabalho em equipa.</p>
+          <h2 class="section-title" data-i18n="sobre_title">Sobre Mim</h2>
+          <p class="section-sub" data-i18n="sobre_sub">Rigor concetual, desenvolvimento prático e trabalho em equipa.</p>
         </div>
 
         <div class="bubbly-grid-3">
@@ -105,8 +111,8 @@
             <div class="card-icon-bubble">
               <i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <h3>Engenharia & Algoritmos</h3>
-            <p>
+            <h3 data-i18n="card1_title">Engenharia & Algoritmos</h3>
+            <p data-i18n="card1_text">
               Formação sólida nos alicerces da computação no IST: análise e síntese de algoritmos, sistemas operativos, estruturas de dados avançadas e arquitetura de computadores.
             </p>
           </div>
@@ -115,8 +121,8 @@
             <div class="card-icon-bubble">
               <i class="fa-solid fa-code"></i>
             </div>
-            <h3>Desenvolvimento de Software</h3>
-            <p>
+            <h3 data-i18n="card2_title">Desenvolvimento de Software</h3>
+            <p data-i18n="card2_text">
               Foco em código legível, modular e escalável. Experiência prática na criação de ferramentas e serviços em Go, Python, C#, C/C++ e arquiteturas de sistemas.
             </p>
           </div>
@@ -125,8 +131,8 @@
             <div class="card-icon-bubble">
               <i class="fa-brands fa-unity"></i>
             </div>
-            <h3>Game Dev & Trabalho em Equipa</h3>
-            <p>
+            <h3 data-i18n="card3_title">Game Dev & Trabalho em Equipa</h3>
+            <p data-i18n="card3_text">
               Membro ativa do núcleo autónomo de Game Dev Técnico, um espaço centrado no incentivo ao trabalho em equipa. Desenvolvemos jogos em Unity e Godot, trabalhando atualmente num projeto direcionado para publicação na Steam.
             </p>
           </div>
@@ -138,21 +144,21 @@
     <section class="section" id="projetos">
       <div class="container">
         <div class="section-title-box">
-          <h2 class="section-title">Projetos</h2>
-          <p class="section-sub">Destaque principal e repositórios no GitHub.</p>
+          <h2 class="section-title" data-i18n="projetos_title">Projetos</h2>
+          <p class="section-sub" data-i18n="projetos_sub">Destaque principal e repositórios no GitHub.</p>
         </div>
 
         <!-- Featured Spotlight -->
         <div class="featured-bubbly-card">
           <div class="featured-top-bar">
-            <span class="featured-tag"><i class="fa-solid fa-star"></i> Projeto em Destaque</span>
+            <span class="featured-tag"><i class="fa-solid fa-star"></i> <span data-i18n="featured_tag">Projeto em Destaque</span></span>
             <span class="featured-repo-id">LeoPlix / ExamManagementPlatform</span>
           </div>
 
           <div class="featured-body">
             <div class="featured-info">
               <h3>Exam Management Platform</h3>
-              <p>
+              <p data-i18n="featured_desc">
                 Plataforma modular desenvolvida para simplificar a gestão, agendamento e submissão de exames e avaliações académicas, garantindo controlo seguro de permissões e uma experiência fluida.
               </p>
               
@@ -168,7 +174,7 @@
             <div class="featured-action">
               <a href="https://github.com/LeoPlix/ExamManagementPlatform" target="_blank" rel="noopener noreferrer" class="btn btn-bubbly-primary">
                 <i class="fa-brands fa-github"></i>
-                <span>Ver no GitHub</span>
+                <span data-i18n="btn_github">Ver no GitHub</span>
               </a>
             </div>
           </div>
@@ -176,7 +182,7 @@
 
         <!-- Repos GitHub Header -->
         <div class="repos-bar">
-          <h3><i class="fa-solid fa-folder-closed icon-mint"></i> Outros Repositórios</h3>
+          <h3><i class="fa-solid fa-folder-closed icon-mint"></i> <span data-i18n="other_repos_title">Outros Repositórios</span></h3>
           <span class="badge-count" id="repos-count-badge">GitHub</span>
         </div>
 
@@ -193,38 +199,38 @@
     <section class="section" id="experiencia">
       <div class="container">
         <div class="section-title-box">
-          <h2 class="section-title">Experiência</h2>
-          <p class="section-sub">Atividades académicas, envolvimento em núcleos e desenvolvimento de software.</p>
+          <h2 class="section-title" data-i18n="experiencia_title">Experiência</h2>
+          <p class="section-sub" data-i18n="experiencia_sub">Atividades académicas, envolvimento em núcleos e desenvolvimento de software.</p>
         </div>
 
         <div class="bubbly-timeline">
           <!-- Item 1 -->
           <div class="timeline-card">
-            <div class="timeline-badge badge-mint">2025 – Presente</div>
+            <div class="timeline-badge badge-mint" data-i18n="date_present">2025 – Presente</div>
             <div class="timeline-body">
               <h3>SINFO (Semana de Informática do IST)</h3>
-              <span class="timeline-role">SINFO Dev Team • Infraestrutura & Operações</span>
-              <p>Colaboração na organização e suporte tecnológico da maior conferência académica de informática da Europa, gerida exclusivamente por estudantes.</p>
+              <span class="timeline-role" data-i18n="exp1_role">SINFO Dev Team • Infraestrutura & Operações</span>
+              <p data-i18n="exp1_text">Colaboração na organização e suporte tecnológico da maior conferência académica de informática da Europa, gerida exclusivamente por estudantes.</p>
             </div>
           </div>
 
           <!-- Item 2 -->
           <div class="timeline-card">
-            <div class="timeline-badge badge-rose">2025 – Presente</div>
+            <div class="timeline-badge badge-rose" data-i18n="date_present">2024 – Presente</div>
             <div class="timeline-body">
-              <h3>Game Dev Técnico & Lançamento na Steam</h3>
-              <span class="timeline-role">Núcleo Académico de Game Dev • Unity & Godot</span>
-              <p>Membro ativa do núcleo de Game Dev Técnico, focado no trabalho de equipa, colaboração e partilha técnica. Desenvolvimento de jogos em motores como Unity e Godot, trabalhando ativamente na criação de um projeto para publicação na Steam.</p>
+              <h3 data-i18n="exp2_title">Game Dev Técnico & Lançamento na Steam</h3>
+              <span class="timeline-role" data-i18n="exp2_role">Núcleo Académico de Game Dev • Unity & Godot</span>
+              <p data-i18n="exp2_text">Membro ativa do núcleo de Game Dev Técnico, focado no trabalho de equipa, colaboração e partilha técnica. Desenvolvimento de jogos em motores como Unity e Godot, trabalhando ativamente na criação de um projeto para publicação na Steam.</p>
             </div>
           </div>
 
           <!-- Item 3 -->
           <div class="timeline-card">
-            <div class="timeline-badge badge-peach">2023 – Presente</div>
+            <div class="timeline-badge badge-peach" data-i18n="date_present">2023 – Presente</div>
             <div class="timeline-body">
               <h3>Instituto Superior Técnico (IST)</h3>
-              <span class="timeline-role">Licenciatura em Engenharia Informática e de Computadores</span>
-              <p>Percurso académico exigente focado em Análise e Síntese de Algoritmos (ASA), Sistemas Operativos (SO), Estruturas de Dados e Engenharia de Software.</p>
+              <span class="timeline-role" data-i18n="exp3_role">Licenciatura em Engenharia Informática e de Computadores</span>
+              <p data-i18n="exp3_text">Percurso académico exigente focado em Análise e Síntese de Algoritmos (ASA), Sistemas Operativos (SO), Estruturas de Dados e Engenharia de Software.</p>
             </div>
           </div>
         </div>
@@ -235,12 +241,12 @@
     <section class="section" id="skills">
       <div class="container">
         <div class="section-title-box">
-          <h2 class="section-title">Skills & Tecnologias</h2>
+          <h2 class="section-title" data-i18n="skills_title">Skills & Tecnologias</h2>
         </div>
 
         <div class="skills-bubbly-wrapper">
           <div class="skills-group">
-            <h4>Linguagens</h4>
+            <h4 data-i18n="skills_cat_languages">Linguagens</h4>
             <div class="skills-pill-grid">
               <span class="skill-bubble"><i class="fa-brands fa-golang"></i> Go</span>
               <span class="skill-bubble"><i class="fa-brands fa-python"></i> Python</span>
@@ -251,17 +257,17 @@
           </div>
 
           <div class="skills-group">
-            <h4>Web & Backend</h4>
+            <h4 data-i18n="skills_cat_web">Web & Backend</h4>
             <div class="skills-pill-grid">
               <span class="skill-bubble"><i class="fa-brands fa-react"></i> Next.js / React</span>
               <span class="skill-bubble"><i class="fa-solid fa-server"></i> REST APIs</span>
               <span class="skill-bubble"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
-              <span class="skill-bubble"><i class="fa-solid fa-cubes"></i> Arquitetura Backend</span>
+              <span class="skill-bubble" data-i18n="skill_backend_arch"><i class="fa-solid fa-cubes"></i> Arquitetura Backend</span>
             </div>
           </div>
 
           <div class="skills-group">
-            <h4>Ferramentas & Game Dev</h4>
+            <h4 data-i18n="skills_cat_tools">Ferramentas & Game Dev</h4>
             <div class="skills-pill-grid">
               <span class="skill-bubble"><i class="fa-brands fa-unity"></i> Unity</span>
               <span class="skill-bubble"><i class="fa-solid fa-gamepad"></i> Godot</span>
@@ -280,8 +286,8 @@
     <section class="section" id="contacto">
       <div class="container">
         <div class="contact-bubbly-box">
-          <h2>Vamos conversar?</h2>
-          <p>Disponível para discutir projetos de engenharia de software, desenvolvimento de jogos ou novas oportunidades de colaboração.</p>
+          <h2 data-i18n="contacto_title">Vamos conversar?</h2>
+          <p data-i18n="contacto_sub">Disponível para discutir projetos de engenharia de software, desenvolvimento de jogos ou novas oportunidades de colaboração.</p>
 
           <div class="contact-buttons-row">
             <a href="mailto:leonor.guedes@tecnico.ulisboa.pt" class="contact-btn">
@@ -306,7 +312,7 @@
   <footer class="footer">
     <div class="container footer-box">
       <span>Leonor Guedes © 2026</span>
-      <a href="#hero" class="back-top-btn"><i class="fa-solid fa-arrow-up"></i> Topo</a>
+      <a href="#hero" class="back-top-btn" data-i18n="back_top"><i class="fa-solid fa-arrow-up"></i> Topo</a>
     </div>
   </footer>
 
