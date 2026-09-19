@@ -177,10 +177,42 @@ ul {
 }
 
 .hero-container {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 3.5rem;
-  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 901px) {
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    grid-template-areas:
+      "pill avatar"
+      "title avatar"
+      "sub avatar"
+      "bio avatar"
+      "actions avatar";
+    gap: 0.4rem 3.5rem;
+    align-items: center;
+  }
+
+  .hero-pill { grid-area: pill; justify-self: start; }
+  .hero-title { grid-area: title; }
+  .hero-sub { grid-area: sub; }
+  .hero-avatar-box { grid-area: avatar; justify-self: center; }
+  .hero-bio { grid-area: bio; }
+  .hero-actions { grid-area: actions; justify-self: start; }
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-avatar-box {
+    margin: 1.5rem 0;
+  }
 }
 
 .hero-pill {
@@ -193,7 +225,7 @@ ul {
   background: var(--mint-fill);
   padding: 0.4rem 1rem;
   border-radius: var(--radius-pill);
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .hero-title {
@@ -203,14 +235,14 @@ ul {
   color: var(--text-dark);
   line-height: 1.1;
   letter-spacing: -0.03em;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .hero-sub {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--rose-accent);
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .hero-bio {
