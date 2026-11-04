@@ -1,6 +1,6 @@
 /**
  * Leonor Costa Guedes — Portfolio Engine
- * Clean Geometric System, Multilingual i18n (PT/EN) & GitHub Sync
+ * Editorial Architecture, Multilingual i18n (PT/EN) & GitHub Sync
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,52 +23,65 @@ const TRANSLATIONS = {
     nav_formacao: "Formação",
     nav_experiencia: "Experiência",
     nav_projetos: "Projetos",
-    nav_competencias: "Competências",
+    nav_competencias: "Skills",
     nav_contacto: "Contacto",
+    nav_menu_btn: "MENU",
 
     // Hero
-    hero_status: "Engenharia Informática @ IST • Disponível para Desafios",
-    hero_role: "Estudante de Engenharia Informática no IST • SINFO Dev Team • Game Dev",
-    hero_bio: "Dedicada à criação de software de alto desempenho, arquiteturas de sistemas robustas e game development. Combino rigor técnico de engenharia com gosto pelo trabalho colaborativo e aprendizagem contínua.",
-    meta_inst_label: "Instituição",
-    meta_loc_label: "Localização",
-    meta_focus_label: "Áreas de Foco",
-    hero_btn_projects: "Ver Projetos",
-    hero_btn_contact: "Contactar",
+    hero_greeting: "Olá, sou a Leonor,",
+    hero_h1_part1: "A SOFTWARE",
+    hero_h1_part2: "& Game Dev",
+    hero_h1_part3: "ENGINEER",
+    hero_subtext: "Estudante de Engenharia Informática no IST. Desenvolvo software com foco em sistemas de alto desempenho, arquiteturas robustas e desenvolvimento colaborativo de jogos para a Steam.",
+    hero_btn_contact: "CONTACTAR",
+    hero_btn_projects: "VER PROJETOS",
+
+    // Stats
+    stat_gpa_label: "Média Licenciatura IST",
+    stat_logic_label: "Lógica para Programação",
+    stat_sec_label: "Média Ensino Secundário",
+    stat_sinfo_label: "SINFO & Game Dev Técnico",
+
+    // 4-Column Feature Strip
+    feat1_title: "BACKEND & ARQUITETURA",
+    feat1_desc: "Serviços escaláveis e ferramentas em Go, C#, Next.js, Docker e bases de dados relacionais e NoSQL.",
+    feat2_title: "GAME DEV & STEAM",
+    feat2_desc: "Trabalho colaborativo no Game Dev Técnico em Unity e Godot, direcionado para lançamento na Steam.",
+    feat3_title: "SISTEMAS & BAIXO NÍVEL",
+    feat3_desc: "Programação em C/C++, troca de dados em tempo real via sockets de rede e ncurses.",
+    feat4_title: "FORMAÇÃO NO IST",
+    feat4_desc: "Rigor analítico, síntese de algoritmos complexos, sistemas operativos e estruturas de dados.",
+
+    // Tech Strip
+    tech_strip_title: "STACK TECNOLÓGICA",
+    tech_strip_sub: "Linguagens, ferramentas e ambientes aplicados no IST e projetos",
 
     // Sobre
-    sobre_tag: "PERFIL PROFISSIONAL",
-    sobre_title: "Sobre Mim",
-    sobre_sub: "Engenharia rigorosa, arquiteturas de sistemas e espírito de equipa.",
-    sobre_quote: "\"Focada, altamente empenhada e movida por uma profunda curiosidade técnica, sou uma estudante de Engenharia Informática e de Computadores dedicada à criação de software de alto desempenho e arquiteturas de sistemas robustas. Procuro uma experiência profissional enriquecedora que desafie as minhas competências técnicas e me permita contribuir para projetos relevantes.\"",
-    card1_title: "Backend & Arquiteturas",
-    card1_text: "Construção de aplicações escaláveis e serviços modulares em Go, C#, Python e Next.js. Foco em APIs RESTful, modelação de bases de dados (PostgreSQL, MongoDB) e conteinerização em Docker.",
-    card2_title: "Game Dev & Equipa",
-    card2_text: "Membro do núcleo de Game Dev Técnico. Colaboração estreita em equipas multidisciplinares no desenvolvimento de jogos em Unity e Godot, incluindo um título atualmente em produção para a Steam.",
-    card3_title: "Sistemas & Baixo Nível",
-    card3_text: "Bases sólidas do IST em sistemas operativos, processos concorrentes, comunicação em rede via sockets, gestão de memória e desenvolvimento em C/C++ e interfaces de terminal com ncurses.",
+    sobre_big_title: "CRIANDO SOFTWARE EFICIENTE & ARQUITETURAS ROBUSTAS",
+    sobre_lead: "Focada, altamente empenhada e movida por uma profunda curiosidade técnica, sou uma estudante de Engenharia Informática e de Computadores dedicada à criação de software de alto desempenho e arquiteturas de sistemas robustas.",
+    sobre_body: "Procuro uma experiência profissional enriquecedora que desafie as minhas competências técnicas e me permita contribuir para projetos relevantes. A minha abordagem combina uma mentalidade de engenharia disciplinada com uma paixão pela aprendizagem contínua, colaboração multidisciplinar e resolução de problemas complexos.",
 
     // Formação
-    formacao_tag: "PERCURSO ACADÉMICO",
-    formacao_title: "Formação Académica",
-    formacao_sub: "Ensino superior de excelência no Instituto Superior Técnico e percurso secundário.",
+    formacao_kicker: "PERCURSO ACADÉMICO",
+    formacao_title: "FORMAÇÃO ACADÉMICA",
+    formacao_sub: "Ensino superior no Instituto Superior Técnico e ensino secundário com distinção.",
     edu_ist_degree: "Licenciatura em Engenharia Informática e de Computadores",
+    stamp_gpa: "MÉDIA GLOBAL",
     edu_ist_date: "Setembro de 2024 — Presente",
-    edu_ist_grade: "Média: 15,6 / 20",
-    edu_courses_title: "Unidades Curriculares Nucleares & Classificações:",
+    edu_courses_subtitle: "Unidades Curriculares Nucleares & Classificações:",
     course1_name: "Lógica para Programação",
     course2_name: "Interação Pessoa-Máquina",
     course3_name: "Programação Orientada a Objetos",
     course4_name: "Sistemas Operativos",
     edu_sec_degree: "Ensino Secundário (Ciências e Tecnologias)",
+    stamp_sec_gpa: "MÉDIA FINAL",
     edu_sec_date: "Setembro de 2021 — Junho de 2024",
-    edu_sec_grade: "Média: 19 / 20",
-    edu_sec_desc: "Conclusão com distinção e sólida preparação em Matemática, Física e lógica analítica.",
+    edu_sec_desc: "Conclusão com distinção, desenvolvendo alicerces sólidos em Matemática, Física e resolução sistemática de problemas lógicos.",
 
     // Experiência
-    exp_tag: "EXPERIÊNCIA & COLABORAÇÃO",
-    exp_title: "Experiência",
-    exp_sub: "Envolvimento ativo em núcleos e desenvolvimento tecnológico no ecossistema universitário.",
+    exp_kicker: "COLABORAÇÃO & NÚCLEOS",
+    exp_title: "EXPERIÊNCIA",
+    exp_sub: "Envolvimento técnico em organizações académicas e desenvolvimento de jogos.",
     sinfo_date: "Novembro de 2025 — Presente",
     sinfo_role: "Membro da Equipa de Desenvolvimento",
     sinfo_bullet1: "Desenvolvimento de soluções de software de alto desempenho para as aplicações web da conferência, utilizando uma stack tecnológica diversificada que inclui Go, Next.js, C# e JavaScript.",
@@ -79,25 +92,25 @@ const TRANSLATIONS = {
     gamedev_bullet2: "Atualmente a desenvolver um projeto colaborativo de um jogo que está previsto ser publicado e lançado na plataforma Steam.",
 
     // Projetos
-    projetos_tag: "ENGENHARIA DE SOFTWARE",
-    projetos_title: "Projetos Pessoais & Académicos",
-    projetos_sub: "Aplicações full-stack, comunicação em rede de baixo nível e repositórios de código aberto.",
-    proj1_kicker: "PROJETO EM DESTAQUE • FULL-STACK",
+    proj_kicker: "CASOS DE ESTUDO & SOFTWARE",
+    proj_title: "PORTFOLIO",
+    proj_sub: "Aplicações full-stack, sistemas em rede de baixo nível e repositórios de código aberto.",
+    proj1_badge: "FULL-STACK WEB PLATFORM",
     proj1_title: "Plataforma de Gestão de Exames",
-    proj1_desc: "Desenvolvimento de uma aplicação web full-stack concebida para a gestão abrangente de exames, classificação, administração escolar e análise estatística com controlo seguro de permissões.",
-    proj2_kicker: "SISTEMAS & REDES • BAIXO NÍVEL",
+    proj1_desc: "Desenvolvimento de uma aplicação web full-stack concebida para a gestão abrangente de exames, classificação, administração escolar e análise estatística, integrando controlo seguro de acessos e arquitetura modular.",
+    btn_view_repo: "Ver no GitHub",
+    proj2_badge: "SISTEMAS & REDES • BAIXO NÍVEL",
     proj2_title: "Jogo Pacman Cliente-Servidor",
-    proj2_desc: "Implementação de renderização baseada em terminal utilizando a biblioteca ncurses e gestão da troca de dados em tempo real através de comunicação em rede (sockets). Gestão de estados concorrentes, suporte a múltiplos clientes e parsing de níveis personalizados.",
-    btn_view_repo: "Repositório no GitHub",
-    btn_view_github_profile: "Explorar no GitHub",
-    other_repos_title: "Outros Repositórios no GitHub",
+    proj2_desc: "Implementação de renderização baseada em terminal utilizando a biblioteca ncurses e gestão da troca de dados em tempo real através de comunicação em rede (sockets). Gestão de estados de jogo concorrentes, suporte a múltiplas ligações de clientes e lógica de parsing de níveis personalizados.",
+    btn_view_github_profile: "Explorar Código",
+    other_repos_title: "OUTROS REPOSITÓRIOS NO GITHUB",
     link_all_repos: "Ver todos no GitHub",
     view_code: "Ver Código",
 
     // Competências
-    skills_tag: "MATRIZ TÉCNICA",
-    skills_title: "Competências",
-    skills_sub: "Stack de desenvolvimento, bases de dados, técnicas de engenharia e idiomas.",
+    skills_kicker: "COMPETÊNCIAS TÉCNICAS",
+    skills_title: "SKILLS & TECNOLOGIAS",
+    skills_sub: "Matriz de competências técnicas, bases de dados e ferramentas de engenharia.",
     skills_cat_web: "Desenvolvimento Web & Backend",
     sk_backend: "Desenvolvimento Backend",
     sk_webdesign: "Web Design & Frontend",
@@ -112,12 +125,12 @@ const TRANSLATIONS = {
     lang_en: "Inglês — Fluente (Comunicação Técnica & Escrita)",
 
     // Contacto
-    contacto_tag: "VAMOS CONVERSAR",
-    contacto_title: "Contacto",
-    contacto_sub: "Disponível para discutir projetos, oportunidades profissionais e colaborações técnicas.",
+    contacto_kicker: "VAMOS CONVERSAR",
+    contacto_title: "CONTACTO",
+    contacto_sub: "Disponível para discutir projetos de engenharia de software, game dev ou oportunidades de estágio.",
     contact_label_email: "E-mail Principal",
     contact_label_phone: "Telefone",
-    footer_sub: "Engenharia Informática @ IST • Lisboa, Portugal",
+    footer_sub: "Engenharia Informática no Instituto Superior Técnico • Lisboa, Portugal",
     back_top: "Topo"
   },
   en: {
@@ -128,50 +141,63 @@ const TRANSLATIONS = {
     nav_projetos: "Projects",
     nav_competencias: "Skills",
     nav_contacto: "Contact",
+    nav_menu_btn: "MENU",
 
     // Hero
-    hero_status: "Computer Science @ IST • Open to Challenges",
-    hero_role: "Computer Science Student @ IST • SINFO Dev Team • Game Dev",
-    hero_bio: "Dedicated to creating high-performance software, robust system architectures, and game development. Combining disciplined engineering rigor with a passion for teamwork and continuous learning.",
-    meta_inst_label: "Institution",
-    meta_loc_label: "Location",
-    meta_focus_label: "Focus Areas",
-    hero_btn_projects: "View Projects",
-    hero_btn_contact: "Contact Me",
+    hero_greeting: "Hey, I'm Leonor,",
+    hero_h1_part1: "A SOFTWARE",
+    hero_h1_part2: "& Game Dev",
+    hero_h1_part3: "ENGINEER",
+    hero_subtext: "Computer Science student at IST. I develop high-performance software, robust system architectures, and collaborative games for Steam.",
+    hero_btn_contact: "CONTACT ME",
+    hero_btn_projects: "VIEW PROJECTS",
+
+    // Stats
+    stat_gpa_label: "BSc GPA at IST",
+    stat_logic_label: "Logic for Programming",
+    stat_sec_label: "Secondary Education GPA",
+    stat_sinfo_label: "SINFO & Game Dev Técnico",
+
+    // 4-Column Feature Strip
+    feat1_title: "BACKEND & ARCHITECTURE",
+    feat1_desc: "Scalable services and tools in Go, C#, Next.js, Docker, and relational & NoSQL databases.",
+    feat2_title: "GAME DEV & STEAM",
+    feat2_desc: "Multidisciplinary game development in Unity & Godot with planned release on Steam.",
+    feat3_title: "SYSTEMS & LOW-LEVEL",
+    feat3_desc: "C/C++ programming, real-time data exchange via network sockets, and ncurses.",
+    feat4_title: "IST ENGINEERING",
+    feat4_desc: "Analytical rigor, synthesis of complex algorithms, operating systems, and data structures.",
+
+    // Tech Strip
+    tech_strip_title: "TECH STACK & TOOLS",
+    tech_strip_sub: "Languages, tools, and environments applied across IST coursework and projects",
 
     // Sobre
-    sobre_tag: "PROFESSIONAL PROFILE",
-    sobre_title: "About Me",
-    sobre_sub: "Rigorous engineering, system architectures, and collaborative drive.",
-    sobre_quote: "\"Focused, highly committed, and driven by deep technical curiosity, I am a Computer Science and Engineering student dedicated to creating high-performance software and robust system architectures. I seek an enriching professional experience that challenges my technical skills and allows me to contribute to relevant projects.\"",
-    card1_title: "Backend & Architecture",
-    card1_text: "Building scalable applications and modular services in Go, C#, Python, and Next.js. Focused on RESTful APIs, database modeling (PostgreSQL, MongoDB), and Docker containerization.",
-    card2_title: "Game Dev & Teamwork",
-    card2_text: "Member of Game Dev Técnico. Close collaboration within multidisciplinary teams developing games in Unity and Godot, including a project currently in production for Steam.",
-    card3_title: "Systems & Low-Level",
-    card3_text: "Solid IST foundations in operating systems, concurrent processes, network sockets, memory management, and development in C/C++ with ncurses terminal interfaces.",
+    sobre_big_title: "CRAFTING HIGH-PERFORMANCE SOFTWARE & ROBUST SYSTEMS",
+    sobre_lead: "Focused, highly committed, and driven by deep technical curiosity, I am a Computer Science and Engineering student dedicated to creating high-performance software and robust system architectures.",
+    sobre_body: "I seek an enriching professional experience that challenges my technical skills and allows me to contribute to relevant projects. My approach combines a disciplined engineering mindset with a passion for continuous learning, multidisciplinary teamwork, and solving complex problems.",
 
     // Formação
-    formacao_tag: "ACADEMIC BACKGROUND",
-    formacao_title: "Education",
-    formacao_sub: "Top-tier higher education at Instituto Superior Técnico and secondary education.",
+    formacao_kicker: "ACADEMIC BACKGROUND",
+    formacao_title: "EDUCATION",
+    formacao_sub: "Top-tier higher education at Instituto Superior Técnico and secondary education with honors.",
     edu_ist_degree: "BSc in Computer Science and Engineering",
+    stamp_gpa: "GLOBAL GPA",
     edu_ist_date: "September 2024 — Present",
-    edu_ist_grade: "GPA: 15.6 / 20",
-    edu_courses_title: "Core Coursework & Grades:",
+    edu_courses_subtitle: "Core Coursework & Grades:",
     course1_name: "Logic for Programming",
     course2_name: "Human-Computer Interaction",
     course3_name: "Object-Oriented Programming",
     course4_name: "Operating Systems",
     edu_sec_degree: "Secondary Education (Sciences & Technology)",
+    stamp_sec_gpa: "FINAL GPA",
     edu_sec_date: "September 2021 — June 2024",
-    edu_sec_grade: "GPA: 19 / 20",
-    edu_sec_desc: "Graduated with honors, with strong foundations in Mathematics, Physics, and analytical logic.",
+    edu_sec_desc: "Graduated with honors, establishing strong foundations in Mathematics, Physics, and analytical logic.",
 
     // Experiência
-    exp_tag: "EXPERIENCE & COLLABORATION",
-    exp_title: "Experience",
-    exp_sub: "Active student organization involvement and technical development within university.",
+    exp_kicker: "COLLABORATION & TEAMS",
+    exp_title: "EXPERIENCE",
+    exp_sub: "Technical involvement in student organizations and game development.",
     sinfo_date: "November 2025 — Present",
     sinfo_role: "Dev Team Member",
     sinfo_bullet1: "Developing high-performance software solutions for conference web applications utilizing a diverse stack including Go, Next.js, C#, and JavaScript.",
@@ -182,25 +208,25 @@ const TRANSLATIONS = {
     gamedev_bullet2: "Currently developing a collaborative game project scheduled to be published and released on the Steam platform.",
 
     // Projetos
-    projetos_tag: "SOFTWARE ENGINEERING",
-    projetos_title: "Personal & Academic Projects",
-    projetos_sub: "Full-stack web applications, low-level networked systems, and open-source repositories.",
-    proj1_kicker: "FEATURED PROJECT • FULL-STACK",
+    proj_kicker: "CASE STUDIES & SOFTWARE",
+    proj_title: "PORTFOLIO",
+    proj_sub: "Full-stack web applications, low-level networked systems, and open-source repositories.",
+    proj1_badge: "FULL-STACK WEB PLATFORM",
     proj1_title: "Exam Management Platform",
     proj1_desc: "Developed a full-stack web application designed for comprehensive exam management, grading, school administration, and statistical analysis with granular access control.",
-    proj2_kicker: "SYSTEMS & NETWORKING • LOW-LEVEL",
+    btn_view_repo: "View on GitHub",
+    proj2_badge: "SYSTEMS & NETWORKING • LOW-LEVEL",
     proj2_title: "Client-Server Pacman Game",
     proj2_desc: "Implemented terminal-based rendering utilizing the ncurses library and real-time network data communication. Handled concurrent game states, multiple client connections, and custom level parsing.",
-    btn_view_repo: "GitHub Repository",
-    btn_view_github_profile: "Explore on GitHub",
-    other_repos_title: "Other GitHub Repositories",
+    btn_view_github_profile: "Explore Code",
+    other_repos_title: "OTHER GITHUB REPOSITORIES",
     link_all_repos: "View all on GitHub",
     view_code: "View Code",
 
     // Competências
-    skills_tag: "TECHNICAL MATRIX",
-    skills_title: "Skills & Tech Stack",
-    skills_sub: "Development stack, databases, engineering techniques, and spoken languages.",
+    skills_kicker: "TECHNICAL MATRIX",
+    skills_title: "SKILLS & TECHNOLOGIES",
+    skills_sub: "Technical matrix, databases, and engineering tools.",
     skills_cat_web: "Web & Backend Development",
     sk_backend: "Backend Development",
     sk_webdesign: "Web Design & Frontend",
@@ -215,12 +241,12 @@ const TRANSLATIONS = {
     lang_en: "English — Fluent (Technical & Written Communication)",
 
     // Contacto
-    contacto_tag: "GET IN TOUCH",
-    contacto_title: "Contact",
-    contacto_sub: "Open to discussing software projects, professional opportunities, and technical collaborations.",
+    contacto_kicker: "GET IN TOUCH",
+    contacto_title: "CONTACT",
+    contacto_sub: "Open to discussing software engineering projects, game dev, or internship opportunities.",
     contact_label_email: "Primary Email",
     contact_label_phone: "Phone",
-    footer_sub: "Computer Science @ IST • Lisbon, Portugal",
+    footer_sub: "Computer Science at Instituto Superior Técnico • Lisbon, Portugal",
     back_top: "Top"
   }
 };
@@ -321,15 +347,13 @@ function initScrollSpy() {
    -------------------------------------------------------------------------- */
 async function fetchGitHubAvatar() {
   const desktopImg = document.getElementById('hero-profile-img');
-  const mobileImg = document.getElementById('hero-profile-img-mobile');
 
   try {
     const res = await fetch('https://api.github.com/users/LeoPlix');
     if (res.ok) {
       const data = await res.json();
-      if (data.avatar_url) {
-        if (desktopImg) desktopImg.src = data.avatar_url;
-        if (mobileImg) mobileImg.src = data.avatar_url;
+      if (data.avatar_url && desktopImg) {
+        desktopImg.src = data.avatar_url;
       }
     }
   } catch (err) {
@@ -338,7 +362,7 @@ async function fetchGitHubAvatar() {
 }
 
 /* --------------------------------------------------------------------------
-   5. GitHub Repositories Sync
+   5. GitHub Repositories Sync & Editorial Cards Render
    -------------------------------------------------------------------------- */
 const EXCLUDED_REPOS = ['ExamManagementPlatform', 'Portfolio'];
 
@@ -428,7 +452,7 @@ function renderRepos(repos, container) {
   repos.forEach(repo => {
     const lang = repo.language || 'Software';
     const card = document.createElement('article');
-    card.className = 'repo-geo-card';
+    card.className = 'repo-card-editorial';
 
     let desc = repo.description;
     if (repo[`description_${currentLang}`]) {
@@ -439,25 +463,25 @@ function renderRepos(repos, container) {
 
     card.innerHTML = `
       <div>
-        <div class="repo-card-header">
-          <span class="repo-lang-tag">${escapeHTML(lang)}</span>
-          <span class="repo-stars">
+        <div class="repo-card-top-line">
+          <span class="repo-badge-lang">${escapeHTML(lang)}</span>
+          <span class="repo-stars-count">
             <i class="fa-regular fa-star"></i> ${repo.stargazers_count || 0}
           </span>
         </div>
 
-        <h4 class="repo-card-title">
+        <h4 class="repo-heading">
           <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
             ${escapeHTML(formatRepoName(repo.name))}
           </a>
         </h4>
 
-        <p class="repo-card-desc">
+        <p class="repo-desc-text">
           ${escapeHTML(desc)}
         </p>
       </div>
 
-      <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="repo-card-link">
+      <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="repo-footer-link">
         <span>${btnLabel}</span>
         <i class="fa-solid fa-arrow-right"></i>
       </a>
