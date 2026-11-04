@@ -3,49 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leonor Guedes — Portefólio</title>
-  <meta name="description" content="Portefólio pessoal de Leonor Guedes, estudante de Engenharia Informática no Instituto Superior Técnico (IST).">
+  <title>Leonor Costa Guedes — Portfolio</title>
+  <meta name="description" content="Portefólio de Leonor Costa Guedes: Engenharia Informática no Instituto Superior Técnico (IST), SINFO Dev Team e Game Development.">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2212%22 fill=%22%232E684B%22/><text y=%2268%22 x=%2250%22 font-family=%22monospace%22 font-size=%2250%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22%23EDF7F2%22>LG</text></svg>">
 
-  <!-- Fonts: Plus Jakarta Sans & Outfit -->
+  <!-- Fonts: Outfit (Display), Plus Jakarta Sans (Body), JetBrains Mono (Tech/Data) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- FontAwesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Custom Stylesheet -->
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Floating Header Navigation -->
+  <!-- Geometric Header Navigation -->
   <header class="navbar-header" id="navbar">
     <div class="container nav-container">
       <a href="#hero" class="brand-logo">
-        <span class="logo-bubble">LG</span>
+        <span class="logo-box">LG</span>
+        <span class="logo-name">Leonor Costa Guedes</span>
       </a>
 
       <nav class="nav-menu" id="nav-menu">
         <ul class="nav-list">
           <li><a href="#sobre" class="nav-link" data-i18n="nav_sobre">Sobre</a></li>
-          <li><a href="#projetos" class="nav-link" data-i18n="nav_projetos">Projetos</a></li>
+          <li><a href="#formacao" class="nav-link" data-i18n="nav_formacao">Formação</a></li>
           <li><a href="#experiencia" class="nav-link" data-i18n="nav_experiencia">Experiência</a></li>
-          <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
-          <li><a href="#contacto" class="nav-link nav-btn-pill" data-i18n="nav_contacto">Contacto</a></li>
+          <li><a href="#projetos" class="nav-link" data-i18n="nav_projetos">Projetos</a></li>
+          <li><a href="#competencias" class="nav-link" data-i18n="nav_competencias">Competências</a></li>
+          <li><a href="#contacto" class="nav-link nav-btn-outline" data-i18n="nav_contacto">Contacto</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions-right">
-        <button class="lang-toggle-btn" id="lang-toggle" aria-label="Alterar idioma">
-          <span id="lang-text">PT | EN</span>
+        <button class="lang-toggle-btn" id="lang-toggle" aria-label="Mudar idioma">
+          <i class="fa-solid fa-globe"></i>
+          <span id="lang-text">PT</span>
         </button>
 
         <button class="nav-toggle" id="nav-toggle" aria-label="Abrir Menu">
-          <i class="fa-solid fa-bars-staggered"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </div>
@@ -57,41 +60,72 @@
       <div class="container hero-container">
         
         <div class="hero-content">
-          <div class="hero-pill">
-            <span class="pill-sparkle">✨</span>
-            <span data-i18n="hero_pill">Engenharia Informática @ IST</span>
+          <div class="hero-status-tag">
+            <span class="status-indicator"></span>
+            <span data-i18n="hero_status">Engenharia Informática @ IST • Disponível para Desafios</span>
           </div>
 
           <h1 class="hero-title">
-            Leonor Guedes
+            Leonor Costa Guedes
           </h1>
 
-          <p class="hero-sub" data-i18n="hero_sub">
-            SINFO Dev Team & Game Dev
+          <p class="hero-role" data-i18n="hero_role">
+            Estudante de Engenharia Informática no IST • SINFO Dev Team • Game Dev
           </p>
 
-          <div class="hero-avatar-box">
-            <div class="avatar-bubble">
-              <img src="https://github.com/LeoPlix.png" alt="Leonor Guedes" id="hero-profile-img" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Leonor+Guedes&background=E8F4EC&color=2D6A4F&size=512';">
+          <!-- Mobile Avatar Placement -->
+          <div class="hero-avatar-box mobile-only">
+            <div class="avatar-frame">
+              <div class="avatar-backdrop"></div>
+              <img src="https://github.com/LeoPlix.png" alt="Leonor Costa Guedes" id="hero-profile-img-mobile" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Leonor+Costa+Guedes&background=EDF7F2&color=246B46&size=512';">
             </div>
           </div>
 
           <p class="hero-bio" data-i18n="hero_bio">
-            Estudante no Instituto Superior Técnico. Desenvolvo software com foco em código limpo e sistemas eficientes — desde projetos de engenharia em Go e C a jogos em Unity e Godot desenvolvidos em equipa para a Steam.
+            Dedicada à criação de software de alto desempenho, arquiteturas de sistemas robustas e game development. Combino rigor técnico de engenharia com gosto pelo trabalho colaborativo e aprendizagem contínua.
           </p>
 
+          <!-- Quick Metadata Strip -->
+          <div class="hero-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label" data-i18n="meta_inst_label">Instituição</span>
+              <span class="meta-value">IST (Univ. de Lisboa)</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span class="meta-label" data-i18n="meta_loc_label">Localização</span>
+              <span class="meta-value">Lisboa, Portugal</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span class="meta-label" data-i18n="meta_focus_label">Áreas de Foco</span>
+              <span class="meta-value">Backend • Sistemas • Game Dev</span>
+            </div>
+          </div>
+
           <div class="hero-actions">
-            <a href="#projetos" class="btn btn-bubbly-primary">
-              <span data-i18n="hero_btn_projects">Explorar Projetos</span>
+            <a href="#projetos" class="btn btn-primary">
+              <span data-i18n="hero_btn_projects">Ver Projetos</span>
               <i class="fa-solid fa-arrow-down"></i>
             </a>
-            <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="btn btn-bubbly-secondary">
+            <a href="#contacto" class="btn btn-secondary">
+              <span data-i18n="hero_btn_contact">Contactar</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+            <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="GitHub">
               <i class="fa-brands fa-github"></i>
-              <span>GitHub</span>
             </a>
-            <a href="mailto:leonor.guedes@tecnico.ulisboa.pt" class="btn btn-circle" aria-label="Enviar E-mail">
-              <i class="fa-regular fa-envelope"></i>
+            <a href="https://www.linkedin.com/in/leonorcguedes" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
+          </div>
+        </div>
+
+        <!-- Desktop Avatar Placement -->
+        <div class="hero-avatar-box desktop-only">
+          <div class="avatar-frame">
+            <div class="avatar-backdrop"></div>
+            <img src="https://github.com/LeoPlix.png" alt="Leonor Costa Guedes" id="hero-profile-img" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Leonor+Costa+Guedes&background=EDF7F2&color=246B46&size=512';">
           </div>
         </div>
 
@@ -101,218 +135,436 @@
     <!-- Sobre Section -->
     <section class="section" id="sobre">
       <div class="container">
-        <div class="section-title-box">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="sobre_tag">PERFIL PROFISSIONAL</div>
           <h2 class="section-title" data-i18n="sobre_title">Sobre Mim</h2>
-          <p class="section-sub" data-i18n="sobre_sub">Rigor concetual, desenvolvimento prático e trabalho em equipa.</p>
+          <p class="section-sub" data-i18n="sobre_sub">Engenharia rigorosa, arquiteturas de sistemas e espírito de equipa.</p>
         </div>
 
-        <div class="bubbly-grid-3">
-          <div class="bubbly-card card-mint">
-            <div class="card-icon-bubble">
-              <i class="fa-solid fa-graduation-cap"></i>
+        <div class="geo-profile-card">
+          <div class="geo-profile-quote">
+            <p data-i18n="sobre_quote">
+              "Focada, altamente empenhada e movida por uma profunda curiosidade técnica, sou uma estudante de Engenharia Informática e de Computadores dedicada à criação de software de alto desempenho e arquiteturas de sistemas robustas. Procuro uma experiência profissional enriquecedora que desafie as minhas competências técnicas e me permita contribuir para projetos relevantes."
+            </p>
+          </div>
+        </div>
+
+        <div class="geo-grid-3">
+          <div class="geo-card accent-mint">
+            <div class="card-corner-tag">01</div>
+            <div class="geo-card-header">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <h3 data-i18n="card1_title">Backend & Arquiteturas</h3>
             </div>
-            <h3 data-i18n="card1_title">Engenharia & Algoritmos</h3>
             <p data-i18n="card1_text">
-              Formação sólida nos alicerces da computação no IST: análise e síntese de algoritmos, sistemas operativos, estruturas de dados avançadas e arquitetura de computadores.
+              Construção de aplicações escaláveis e serviços modulares em Go, C#, Python e Next.js. Foco em APIs RESTful, modelação de bases de dados (PostgreSQL, MongoDB) e conteinerização em Docker.
             </p>
           </div>
 
-          <div class="bubbly-card card-rose">
-            <div class="card-icon-bubble">
-              <i class="fa-solid fa-code"></i>
+          <div class="geo-card accent-rose">
+            <div class="card-corner-tag">02</div>
+            <div class="geo-card-header">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-gamepad"></i>
+              </div>
+              <h3 data-i18n="card2_title">Game Dev & Equipa</h3>
             </div>
-            <h3 data-i18n="card2_title">Desenvolvimento de Software</h3>
             <p data-i18n="card2_text">
-              Foco em código legível, modular e escalável. Experiência prática na criação de ferramentas e serviços em Go, Python, C#, C/C++ e arquiteturas de sistemas.
+              Membro do núcleo de Game Dev Técnico. Colaboração estreita em equipas multidisciplinares no desenvolvimento de jogos em Unity e Godot, incluindo um título atualmente em produção para a Steam.
             </p>
           </div>
 
-          <div class="bubbly-card card-peach">
-            <div class="card-icon-bubble">
-              <i class="fa-brands fa-unity"></i>
+          <div class="geo-card accent-peach">
+            <div class="card-corner-tag">03</div>
+            <div class="geo-card-header">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h3 data-i18n="card3_title">Sistemas & Baixo Nível</h3>
             </div>
-            <h3 data-i18n="card3_title">Game Dev & Trabalho em Equipa</h3>
             <p data-i18n="card3_text">
-              Membro ativa do núcleo autónomo de Game Dev Técnico, um espaço centrado no incentivo ao trabalho em equipa. Desenvolvemos jogos em Unity e Godot, trabalhando atualmente num projeto direcionado para publicação na Steam.
+              Bases sólidas do IST em sistemas operativos, processos concorrentes, comunicação em rede via sockets, gestão de memória e desenvolvimento em C/C++ e interfaces de terminal com ncurses.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projetos Section -->
-    <section class="section" id="projetos">
+    <!-- Formação Académica Section -->
+    <section class="section section-alt" id="formacao">
       <div class="container">
-        <div class="section-title-box">
-          <h2 class="section-title" data-i18n="projetos_title">Projetos</h2>
-          <p class="section-sub" data-i18n="projetos_sub">Destaque principal e repositórios no GitHub.</p>
+        <div class="section-header">
+          <div class="section-tag" data-i18n="formacao_tag">PERCURSO ACADÉMICO</div>
+          <h2 class="section-title" data-i18n="formacao_title">Formação Académica</h2>
+          <p class="section-sub" data-i18n="formacao_sub">Ensino superior de excelência no Instituto Superior Técnico e percurso secundário.</p>
         </div>
 
-        <!-- Featured Spotlight -->
-        <div class="featured-bubbly-card">
-          <div class="featured-top-bar">
-            <span class="featured-tag"><i class="fa-solid fa-star"></i> <span data-i18n="featured_tag">Projeto em Destaque</span></span>
-            <span class="featured-repo-id">LeoPlix / ExamManagementPlatform</span>
-          </div>
-
-          <div class="featured-body">
-            <div class="featured-info">
-              <h3>Exam Management Platform</h3>
-              <p data-i18n="featured_desc">
-                Plataforma modular desenvolvida para simplificar a gestão, agendamento e submissão de exames e avaliações académicas, garantindo controlo seguro de permissões e uma experiência fluida.
-              </p>
-              
-              <div class="bubbly-tags">
-                <span class="tag-bubble">Go / C#</span>
-                <span class="tag-bubble">React</span>
-                <span class="tag-bubble">Docker</span>
-                <span class="tag-bubble">MongoDB</span>
-                <span class="tag-bubble">REST API</span>
+        <div class="education-grid">
+          <!-- IST Card -->
+          <div class="edu-card main-edu-card">
+            <div class="edu-header">
+              <div class="edu-identity">
+                <span class="edu-institution">Instituto Superior Técnico (IST)</span>
+                <h3 class="edu-degree" data-i18n="edu_ist_degree">Licenciatura em Engenharia Informática e de Computadores</h3>
+              </div>
+              <div class="edu-meta-badges">
+                <span class="geo-badge badge-mint" data-i18n="edu_ist_date">Setembro de 2024 — Presente</span>
+                <span class="geo-badge badge-grade" data-i18n="edu_ist_grade">Média: 15,6 / 20</span>
               </div>
             </div>
 
-            <div class="featured-action">
-              <a href="https://github.com/LeoPlix/ExamManagementPlatform" target="_blank" rel="noopener noreferrer" class="btn btn-bubbly-primary">
-                <i class="fa-brands fa-github"></i>
-                <span data-i18n="btn_github">Ver no GitHub</span>
-              </a>
+            <div class="edu-body">
+              <h4 class="edu-section-subtitle" data-i18n="edu_courses_title">Unidades Curriculares Nucleares & Classificações:</h4>
+              <div class="courses-grid">
+                <div class="course-tile grade-top">
+                  <div class="course-code" data-i18n="course1_name">Lógica para Programação</div>
+                  <div class="course-grade">20 / 20</div>
+                </div>
+                <div class="course-tile grade-high">
+                  <div class="course-code" data-i18n="course2_name">Interação Pessoa-Máquina</div>
+                  <div class="course-grade">18 / 20</div>
+                </div>
+                <div class="course-tile grade-high">
+                  <div class="course-code" data-i18n="course3_name">Programação Orientada a Objetos</div>
+                  <div class="course-grade">17 / 20</div>
+                </div>
+                <div class="course-tile grade-mid">
+                  <div class="course-code" data-i18n="course4_name">Sistemas Operativos</div>
+                  <div class="course-grade">15 / 20</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Education Card -->
+          <div class="edu-card">
+            <div class="edu-header">
+              <div class="edu-identity">
+                <span class="edu-institution">Escola Secundária do Entroncamento</span>
+                <h3 class="edu-degree" data-i18n="edu_sec_degree">Ensino Secundário (Ciências e Tecnologias)</h3>
+              </div>
+              <div class="edu-meta-badges">
+                <span class="geo-badge badge-slate" data-i18n="edu_sec_date">Setembro de 2021 — Junho de 2024</span>
+                <span class="geo-badge badge-grade-peach" data-i18n="edu_sec_grade">Média: 19 / 20</span>
+              </div>
+            </div>
+            <div class="edu-body">
+              <p class="edu-desc" data-i18n="edu_sec_desc">
+                Conclusão com distinção e sólida preparação em Matemática, Física e lógica analítica.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- Repos GitHub Header -->
-        <div class="repos-bar">
-          <h3><i class="fa-solid fa-folder-closed icon-mint"></i> <span data-i18n="other_repos_title">Outros Repositórios</span></h3>
-          <span class="badge-count" id="repos-count-badge">GitHub</span>
-        </div>
-
-        <!-- Dynamic Grid -->
-        <div class="projects-bubbly-grid" id="projects-grid">
-          <div class="bubbly-card skeleton-card"><div class="skeleton-pill"></div></div>
-          <div class="bubbly-card skeleton-card"><div class="skeleton-pill"></div></div>
-          <div class="bubbly-card skeleton-card"><div class="skeleton-pill"></div></div>
-        </div>
       </div>
     </section>
 
     <!-- Experiência Section -->
     <section class="section" id="experiencia">
       <div class="container">
-        <div class="section-title-box">
-          <h2 class="section-title" data-i18n="experiencia_title">Experiência</h2>
-          <p class="section-sub" data-i18n="experiencia_sub">Atividades académicas, envolvimento em núcleos e desenvolvimento de software.</p>
+        <div class="section-header">
+          <div class="section-tag" data-i18n="exp_tag">EXPERIÊNCIA & COLABORAÇÃO</div>
+          <h2 class="section-title" data-i18n="exp_title">Experiência</h2>
+          <p class="section-sub" data-i18n="exp_sub">Envolvimento ativo em núcleos e desenvolvimento tecnológico no ecossistema universitário.</p>
         </div>
 
-        <div class="bubbly-timeline">
-          <!-- Item 1 -->
-          <div class="timeline-card">
-            <div class="timeline-badge badge-mint" data-i18n="date_present">2025 – Presente</div>
-            <div class="timeline-body">
-              <h3>SINFO (Semana de Informática do IST)</h3>
-              <span class="timeline-role" data-i18n="exp1_role">SINFO Dev Team • Infraestrutura & Operações</span>
-              <p data-i18n="exp1_text">Colaboração na organização e suporte tecnológico da maior conferência académica de informática da Europa, gerida exclusivamente por estudantes.</p>
+        <div class="geo-timeline">
+          <!-- SINFO -->
+          <div class="timeline-block">
+            <div class="timeline-meta">
+              <span class="timeline-date" data-i18n="sinfo_date">Novembro de 2025 — Presente</span>
+              <span class="timeline-loc">Lisboa, Portugal</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-title-row">
+                <h3>SINFO</h3>
+                <span class="timeline-badge-role" data-i18n="sinfo_role">Membro da Equipa de Desenvolvimento</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="sinfo_bullet1">Desenvolvimento de soluções de software de alto desempenho para as aplicações web da conferência, utilizando uma stack tecnológica diversificada que inclui Go, Next.js, C# e JavaScript.</li>
+                <li data-i18n="sinfo_bullet2">Colaboração estreita com a comissão organizadora e colegas de desenvolvimento para garantir uma execução técnica impecável na maior conferência de tecnologia organizada por estudantes em Portugal.</li>
+              </ul>
+              <div class="tech-chip-row">
+                <span class="tech-chip">Go</span>
+                <span class="tech-chip">Next.js</span>
+                <span class="tech-chip">C#</span>
+                <span class="tech-chip">JavaScript</span>
+              </div>
             </div>
           </div>
 
-          <!-- Item 2 -->
-          <div class="timeline-card">
-            <div class="timeline-badge badge-rose" data-i18n="date_present">2025 – Presente</div>
-            <div class="timeline-body">
-              <h3 data-i18n="exp2_title">Game Dev Técnico & Lançamento na Steam</h3>
-              <span class="timeline-role" data-i18n="exp2_role">Núcleo Académico de Game Dev • Unity & Godot</span>
-              <p data-i18n="exp2_text">Membro ativa do núcleo de Game Dev Técnico, focado no trabalho de equipa, colaboração e partilha técnica. Desenvolvimento de jogos em motores como Unity e Godot, trabalhando ativamente na criação de um projeto para publicação na Steam.</p>
+          <!-- Game Dev Técnico -->
+          <div class="timeline-block">
+            <div class="timeline-meta">
+              <span class="timeline-date" data-i18n="gamedev_date">Dezembro de 2025 — Presente</span>
+              <span class="timeline-loc">Lisboa, Portugal</span>
             </div>
-          </div>
-
-          <!-- Item 3 -->
-          <div class="timeline-card">
-            <div class="timeline-badge badge-peach" data-i18n="date_present">2023 – Presente</div>
-            <div class="timeline-body">
-              <h3>Instituto Superior Técnico (IST)</h3>
-              <span class="timeline-role" data-i18n="exp3_role">Licenciatura em Engenharia Informática e de Computadores</span>
-              <p data-i18n="exp3_text">Percurso académico exigente focado em Análise e Síntese de Algoritmos (ASA), Sistemas Operativos (SO), Estruturas de Dados e Engenharia de Software.</p>
+            <div class="timeline-content">
+              <div class="timeline-title-row">
+                <h3>Game Dev Técnico</h3>
+                <span class="timeline-badge-role badge-role-rose" data-i18n="gamedev_role">Membro</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="gamedev_bullet1">Colaboração em equipas multidisciplinares, resolvendo desafios técnicos num ambiente dinâmico e acelerado de desenvolvimento de jogos.</li>
+                <li data-i18n="gamedev_bullet2">Atualmente a desenvolver um projeto colaborativo de um jogo que está previsto ser publicado e lançado na plataforma Steam.</li>
+              </ul>
+              <div class="tech-chip-row">
+                <span class="tech-chip">Unity</span>
+                <span class="tech-chip">Godot</span>
+                <span class="tech-chip">Steam API</span>
+                <span class="tech-chip">C#</span>
+                <span class="tech-chip">Física 2D</span>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="section" id="skills">
+    <!-- Projetos Section -->
+    <section class="section section-alt" id="projetos">
       <div class="container">
-        <div class="section-title-box">
-          <h2 class="section-title" data-i18n="skills_title">Skills & Tecnologias</h2>
+        <div class="section-header">
+          <div class="section-tag" data-i18n="projetos_tag">ENGENHARIA DE SOFTWARE</div>
+          <h2 class="section-title" data-i18n="projetos_title">Projetos Pessoais & Académicos</h2>
+          <p class="section-sub" data-i18n="projetos_sub">Aplicações full-stack, comunicação em rede de baixo nível e repositórios de código aberto.</p>
         </div>
 
-        <div class="skills-bubbly-wrapper">
-          <div class="skills-group">
-            <h4 data-i18n="skills_cat_languages">Linguagens</h4>
-            <div class="skills-pill-grid">
-              <span class="skill-bubble"><i class="fa-brands fa-golang"></i> Go</span>
-              <span class="skill-bubble"><i class="fa-brands fa-python"></i> Python</span>
-              <span class="skill-bubble"><i class="fa-solid fa-code"></i> C# (.NET)</span>
-              <span class="skill-bubble"><i class="fa-solid fa-c"></i> C / C++</span>
-              <span class="skill-bubble"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <!-- Featured Projects Grid -->
+        <div class="featured-projects-grid">
+          
+          <!-- Projeto 1: Plataforma de Gestão de Exames -->
+          <article class="featured-card">
+            <div class="featured-card-top">
+              <span class="featured-kicker" data-i18n="proj1_kicker">PROJETO EM DESTAQUE • FULL-STACK</span>
+              <span class="repo-ref">LeoPlix / ExamManagementPlatform</span>
             </div>
+            
+            <h3 class="featured-title" data-i18n="proj1_title">Plataforma de Gestão de Exames</h3>
+            
+            <p class="featured-desc" data-i18n="proj1_desc">
+              Desenvolvimento de uma aplicação web full-stack concebida para a gestão abrangente de exames, classificação, administração escolar e análise estatística com controlo seguro de permissões.
+            </p>
+
+            <div class="tech-chip-row">
+              <span class="tech-chip chip-mint">Go</span>
+              <span class="tech-chip chip-mint">C# (.NET)</span>
+              <span class="tech-chip">React / Next.js</span>
+              <span class="tech-chip">MongoDB</span>
+              <span class="tech-chip">Docker</span>
+              <span class="tech-chip">REST API</span>
+            </div>
+
+            <div class="featured-card-footer">
+              <a href="https://github.com/LeoPlix/ExamManagementPlatform" target="_blank" rel="noopener noreferrer" class="btn btn-outline-clean">
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="btn_view_repo">Repositório no GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 2: Jogo Pacman Cliente-Servidor -->
+          <article class="featured-card">
+            <div class="featured-card-top">
+              <span class="featured-kicker kicker-rose" data-i18n="proj2_kicker">SISTEMAS & REDES • BAIXO NÍVEL</span>
+              <span class="repo-ref">LeoPlix / Pacman-Client-Server</span>
+            </div>
+            
+            <h3 class="featured-title" data-i18n="proj2_title">Jogo Pacman Cliente-Servidor</h3>
+            
+            <p class="featured-desc" data-i18n="proj2_desc">
+              Implementação de renderização baseada em terminal utilizando a biblioteca ncurses e gestão da troca de dados em tempo real através de comunicação em rede (sockets). Gestão de estados concorrentes, suporte a múltiplos clientes e parsing de níveis personalizados.
+            </p>
+
+            <div class="tech-chip-row">
+              <span class="tech-chip chip-rose">C / C++</span>
+              <span class="tech-chip chip-rose">ncurses</span>
+              <span class="tech-chip">Sockets & Redes</span>
+              <span class="tech-chip">Concorrência</span>
+              <span class="tech-chip">Linux</span>
+            </div>
+
+            <div class="featured-card-footer">
+              <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="btn btn-outline-clean">
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="btn_view_github_profile">Explorar no GitHub</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Outros Repositórios GitHub -->
+        <div class="repos-bar">
+          <div class="repos-bar-left">
+            <h3 data-i18n="other_repos_title">Outros Repositórios no GitHub</h3>
+            <span class="repos-count-tag" id="repos-count-badge">GitHub Sync</span>
+          </div>
+          <a href="https://github.com/LeoPlix?tab=repositories" target="_blank" rel="noopener noreferrer" class="link-all-repos">
+            <span data-i18n="link_all_repos">Ver todos no GitHub</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <!-- Dynamic Grid from GitHub API -->
+        <div class="projects-geo-grid" id="projects-grid">
+          <div class="geo-card skeleton-card"></div>
+          <div class="geo-card skeleton-card"></div>
+          <div class="geo-card skeleton-card"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Competências Section -->
+    <section class="section" id="competencias">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="skills_tag">MATRIZ TÉCNICA</div>
+          <h2 class="section-title" data-i18n="skills_title">Competências</h2>
+          <p class="section-sub" data-i18n="skills_sub">Stack de desenvolvimento, bases de dados, técnicas de engenharia e idiomas.</p>
+        </div>
+
+        <div class="skills-matrix-grid">
+          <!-- Web & Backend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-code"></i>
+              <h3 data-i18n="skills_cat_web">Desenvolvimento Web & Backend</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sk_backend">Desenvolvimento Backend</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sk_webdesign">Web Design & Frontend</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Go (Golang)</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>C# (.NET)</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Next.js / React</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>JavaScript / HTML5 / CSS3</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Python</span></li>
+            </ul>
           </div>
 
-          <div class="skills-group">
-            <h4 data-i18n="skills_cat_web">Web & Backend</h4>
-            <div class="skills-pill-grid">
-              <span class="skill-bubble"><i class="fa-brands fa-react"></i> Next.js / React</span>
-              <span class="skill-bubble"><i class="fa-solid fa-server"></i> REST APIs</span>
-              <span class="skill-bubble"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
-              <span class="skill-bubble" data-i18n="skill_backend_arch"><i class="fa-solid fa-cubes"></i> Arquitetura Backend</span>
+          <!-- Databases & Tools -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-database"></i>
+              <h3 data-i18n="skills_cat_tools">Bases de Dados & Ferramentas</h3>
             </div>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-check"></i> <span>PostgreSQL</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>MongoDB</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Docker</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Git & GitHub</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Linux / Bash / Terminal</span></li>
+            </ul>
           </div>
 
-          <div class="skills-group">
-            <h4 data-i18n="skills_cat_tools">Ferramentas & Game Dev</h4>
-            <div class="skills-pill-grid">
-              <span class="skill-bubble"><i class="fa-brands fa-unity"></i> Unity</span>
-              <span class="skill-bubble"><i class="fa-solid fa-gamepad"></i> Godot</span>
-              <span class="skill-bubble"><i class="fa-brands fa-steam"></i> Steam Dev</span>
-              <span class="skill-bubble"><i class="fa-brands fa-docker"></i> Docker</span>
-              <span class="skill-bubble"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
-              <span class="skill-bubble"><i class="fa-solid fa-database"></i> MongoDB & SQL</span>
-              <span class="skill-bubble"><i class="fa-solid fa-terminal"></i> Linux / Bash</span>
+          <!-- Technical & Game Dev -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-microchip"></i>
+              <h3 data-i18n="skills_cat_techniques">Técnicas & Sistemas</h3>
             </div>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sk_apimgmt">Gestão de APIs & REST</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sk_sysarch">Arquitetura de Sistemas</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sk_gamedesign">Design de Jogos</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sk_physics">Física 2D</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Comunicação em Rede (Sockets)</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Unity & Godot Engine</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>C / C++</span></li>
+            </ul>
+          </div>
+
+          <!-- Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-language"></i>
+              <h3 data-i18n="skills_cat_languages">Idiomas</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="lang_pt">Português — Língua Materna / Nativo</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="lang_en">Inglês — Fluente (Comunicação Técnica & Escrita)</span></li>
+            </ul>
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- Contacto Section -->
-    <section class="section" id="contacto">
+    <section class="section section-alt" id="contacto">
       <div class="container">
-        <div class="contact-bubbly-box">
-          <h2 data-i18n="contacto_title">Vamos conversar?</h2>
-          <p data-i18n="contacto_sub">Disponível para discutir projetos de engenharia de software, desenvolvimento de jogos ou novas oportunidades de colaboração.</p>
+        <div class="section-header">
+          <div class="section-tag" data-i18n="contacto_tag">VAMOS CONVERSAR</div>
+          <h2 class="section-title" data-i18n="contacto_title">Contacto</h2>
+          <p class="section-sub" data-i18n="contacto_sub">Disponível para discutir projetos, oportunidades profissionais e colaborações técnicas.</p>
+        </div>
 
-          <div class="contact-buttons-row">
-            <a href="mailto:leonor.guedes@tecnico.ulisboa.pt" class="contact-btn">
+        <div class="contact-geo-grid">
+          <a href="mailto:leonorcguedes52@gmail.com" class="contact-card">
+            <div class="contact-card-icon icon-mint">
               <i class="fa-regular fa-envelope"></i>
-              <span>leonor.guedes@tecnico.ulisboa.pt</span>
-            </a>
-            <a href="https://www.linkedin.com/in/leonorcguedes" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label" data-i18n="contact_label_email">E-mail Principal</span>
+              <span class="contact-card-value">leonorcguedes52@gmail.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <a href="tel:+351937065578" class="contact-card">
+            <div class="contact-card-icon icon-rose">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label" data-i18n="contact_label_phone">Telefone</span>
+              <span class="contact-card-value">+351 937 065 578</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/leonorcguedes" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon icon-peach">
               <i class="fa-brands fa-linkedin-in"></i>
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">linkedin.com/in/leonorcguedes</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <a href="https://github.com/LeoPlix" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon icon-slate">
               <i class="fa-brands fa-github"></i>
-              <span>GitHub</span>
-            </a>
-          </div>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">github.com/LeoPlix</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Clean Minimal Footer -->
+  <!-- Clean Geometric Footer -->
   <footer class="footer">
-    <div class="container footer-box">
-      <span>Leonor Guedes © 2026</span>
-      <a href="#hero" class="back-top-btn" data-i18n="back_top"><i class="fa-solid fa-arrow-up"></i> Topo</a>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-title">Leonor Costa Guedes</span>
+        <span class="footer-sub" data-i18n="footer_sub">Engenharia Informática @ IST • Lisboa, Portugal</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="btn-back-top" data-i18n="back_top">
+          <i class="fa-solid fa-arrow-up"></i>
+          <span>Topo</span>
+        </a>
+      </div>
     </div>
   </footer>
 
