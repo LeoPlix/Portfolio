@@ -1,6 +1,6 @@
 /* ==========================================================================
    Leonor Costa Guedes — Editorial Portfolio
-   Dominic/Solt Architecture + Original Pastel Color Palette
+   Dominic/Solt Architecture + Original Pastel Color Palette + Circular Avatar
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -223,7 +223,7 @@ ul {
 }
 
 /* --------------------------------------------------------------------------
-   4. Hero Section (Dominic-Style 3-Column Editorial Grid)
+   4. Hero Section (Editorial 3-Column with Circular Portrait)
    -------------------------------------------------------------------------- */
 .hero-section {
   padding-top: 7.5rem;
@@ -234,7 +234,7 @@ ul {
 
 .hero-editorial-grid {
   display: grid;
-  grid-template-columns: 1.15fr 320px 0.85fr;
+  grid-template-columns: 1.15fr 300px 0.85fr;
   gap: 2.5rem;
   align-items: center;
   margin-bottom: 4rem;
@@ -354,39 +354,55 @@ ul {
   color: var(--mint-accent);
 }
 
-/* Column 2: Center Arch Portrait */
+/* Column 2: Center Circular Portrait */
 .hero-col-arch {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.arch-frame {
+.circle-avatar-frame {
   position: relative;
-  width: 290px;
-  height: 410px;
+  width: 265px;
+  height: 265px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.arch-backdrop {
+.circle-backdrop {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--mint-fill);
-  border: 1px solid var(--mint-border);
-  border-radius: 145px 145px 12px 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--mint-fill) 0%, #D8EDE1 100%);
+  border: 2px dashed var(--mint-border);
   z-index: 1;
+  transform: scale(1.06);
+  transition: transform 0.3s ease;
 }
 
-.arch-frame img {
+.circle-avatar-frame:hover .circle-backdrop {
+  transform: scale(1.1) rotate(15deg);
+  border-color: var(--mint-accent);
+}
+
+.circle-avatar-frame img {
   position: relative;
   z-index: 2;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 145px 145px 12px 12px;
-  border: 1px solid var(--border-card);
-  box-shadow: var(--shadow-card);
+  object-position: center 25%;
+  border-radius: 50%;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 12px 30px -6px rgba(30, 34, 41, 0.12), 0 4px 10px -2px rgba(88, 154, 116, 0.15);
+  background: #FFFFFF;
+  transition: transform 0.3s ease;
+}
+
+.circle-avatar-frame:hover img {
+  transform: scale(1.02);
 }
 
 /* Column 3: Stats Column */
@@ -589,7 +605,7 @@ ul {
 }
 
 /* --------------------------------------------------------------------------
-   8. Section Headers (Dominic Editorial Style)
+   8. Section Headers
    -------------------------------------------------------------------------- */
 .editorial-section-header {
   margin-bottom: 2.75rem;
@@ -896,7 +912,7 @@ ul {
 }
 
 /* --------------------------------------------------------------------------
-   11. Portfolio / Projetos Showcase (Large Dominic-Style Cards)
+   11. Portfolio / Projetos Showcase
    -------------------------------------------------------------------------- */
 .portfolio-showcase {
   display: flex;
@@ -1376,7 +1392,7 @@ ul {
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .hero-editorial-grid {
-    grid-template-columns: 1fr 280px 180px;
+    grid-template-columns: 1fr 260px 180px;
     gap: 1.5rem;
   }
 
@@ -1509,14 +1525,9 @@ ul {
     padding: 0 1.2rem;
   }
 
-  .arch-frame {
-    width: 240px;
-    height: 340px;
-  }
-
-  .arch-backdrop,
-  .arch-frame img {
-    border-radius: 120px 120px 10px 10px;
+  .circle-avatar-frame {
+    width: 220px;
+    height: 220px;
   }
 
   .grades-condensed-grid {
