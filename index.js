@@ -30,9 +30,8 @@ const TRANSLATIONS = {
     // Hero
     hero_greeting: "Olá! Sou a Leonor,",
     hero_h1_part1: "SOFTWARE",
-    hero_h1_part2: "& Game Dev",
-    hero_h1_part3: "NO TÉCNICO",
-    hero_subtext: "Estudante de Engenharia Informática no Instituto Superior Técnico. Gosto de resolver problemas em backend, perceber como os sistemas funcionam por dentro e criar jogos em equipa.",
+    hero_h1_part2: "NO TÉCNICO",
+    hero_subtext: "Estudante de Engenharia Informática no Instituto Superior Técnico. Gosto de resolver problemas em backend, perceber como os sistemas funcionam por dentro e desenvolver projetos em equipa.",
     hero_btn_contact: "FALAR COMIGO",
     hero_btn_projects: "VER PROJETOS",
 
@@ -58,8 +57,8 @@ const TRANSLATIONS = {
 
     // Sobre
     sobre_big_title: "UM POUCO SOBRE MIM",
-    sobre_lead: "Sempre tive muita curiosidade em perceber como é que as coisas funcionam por dentro. Entrar em Engenharia Informática no Técnico foi o passo natural.",
-    sobre_body: "No IST tenho vindo a ganhar uma base sólida em programação e algoritmos — desde tirar 20 a Lógica para Programação até resolver problemas de concorrência e memória em C. Para além das aulas, gosto de meter as mãos na massa: entrei para a equipa de dev da SINFO e para o Game Dev Técnico, onde estamos a criar um jogo para publicar na Steam. Estou sempre motivada para aprender mais e trabalhar em equipa!",
+    sobre_lead: "Focada, altamente empenhada e movida por uma profunda curiosidade técnica, sou estudante de Engenharia Informática e de Computadores no IST, dedicada à criação de software de alto desempenho e arquiteturas de sistemas robustas.",
+    sobre_body: "Procuro uma experiência profissional enriquecedora que desafie as minhas competências técnicas e me permita contribuir para projetos relevantes. A minha abordagem combina uma mentalidade de engenharia disciplinada com uma paixão pela aprendizagem contínua, colaboração em equipa e resolução de problemas práticos.",
 
     // Formação
     formacao_kicker: "ONDE ESTUDEI",
@@ -146,9 +145,8 @@ const TRANSLATIONS = {
     // Hero
     hero_greeting: "Hi! I'm Leonor,",
     hero_h1_part1: "SOFTWARE",
-    hero_h1_part2: "& Game Dev",
-    hero_h1_part3: "STUDENT @ IST",
-    hero_subtext: "Computer Science student at Instituto Superior Técnico in Lisbon. I like solving backend puzzles, seeing how things work under the hood, and building games in multidisciplinary teams.",
+    hero_h1_part2: "AT TÉCNICO",
+    hero_subtext: "Computer Science student at Instituto Superior Técnico in Lisbon. I like solving backend problems, understanding how systems work under the hood, and building projects in teams.",
     hero_btn_contact: "GET IN TOUCH",
     hero_btn_projects: "VIEW PROJECTS",
 
@@ -174,8 +172,8 @@ const TRANSLATIONS = {
 
     // Sobre
     sobre_big_title: "A BIT ABOUT ME",
-    sobre_lead: "I've always been driven by curiosity to figure out how software actually works under the hood. Studying Computer Science at Técnico was the natural path.",
-    sobre_body: "At IST, I've been building a solid foundation in programming and core CS — from scoring 20/20 in Logic for Programming to debugging concurrency and memory in C. Beyond classes, I love getting my hands dirty: I joined SINFO Dev Team to help build the conference web apps, and Game Dev Técnico where we're making a game for Steam. Always eager to learn more and work with awesome people!",
+    sobre_lead: "Focused, highly committed, and driven by deep technical curiosity, I am a Computer Science and Engineering student at IST dedicated to creating high-performance software and robust system architectures.",
+    sobre_body: "I seek an enriching professional experience that challenges my technical skills and allows me to contribute to impactful projects. My approach combines a disciplined engineering mindset with a passion for continuous learning, teamwork, and practical problem-solving.",
 
     // Formação
     formacao_kicker: "ACADEMIC JOURNEY",
