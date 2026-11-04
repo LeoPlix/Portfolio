@@ -29,8 +29,8 @@ const TRANSLATIONS = {
 
     // Hero
     hero_greeting: "Olá! Sou a Leonor,",
-    hero_h1_part1: "SOFTWARE",
-    hero_h1_part2: "NO TÉCNICO",
+    hero_h1_part1: "ENGENHARIA INFORMÁTICA",
+    hero_h1_part2: "E DE COMPUTADORES",
     hero_subtext: "Estudante de Engenharia Informática no Instituto Superior Técnico. Gosto de resolver problemas em backend, perceber como os sistemas funcionam por dentro e desenvolver projetos em equipa.",
     hero_btn_contact: "FALAR COMIGO",
     hero_btn_projects: "VER PROJETOS",
@@ -144,8 +144,8 @@ const TRANSLATIONS = {
 
     // Hero
     hero_greeting: "Hi! I'm Leonor,",
-    hero_h1_part1: "SOFTWARE",
-    hero_h1_part2: "AT TÉCNICO",
+    hero_h1_part1: "COMPUTER SCIENCE",
+    hero_h1_part2: "AND ENGINEERING",
     hero_subtext: "Computer Science student at Instituto Superior Técnico in Lisbon. I like solving backend problems, understanding how systems work under the hood, and building projects in teams.",
     hero_btn_contact: "GET IN TOUCH",
     hero_btn_projects: "VIEW PROJECTS",
